@@ -10,15 +10,15 @@ const config: Config = {
     favicon: "img/tengu.svg",
 
     // Set the production url of your site here
-    url: "https://your-docusaurus-site.example.com",
+    url: "https://tengu.to1.dev",
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
     baseUrl: "/",
 
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
-    organizationName: "facebook", // Usually your GitHub org/user name.
-    projectName: "docusaurus", // Usually your repo name.
+    organizationName: "to1dev", // Usually your GitHub org/user name.
+    projectName: "tengu", // Usually your repo name.
 
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
@@ -64,6 +64,31 @@ const config: Config = {
         ],
     ],
 
+    headTags: [
+        {
+            tagName: "link",
+            attributes: {
+                rel: "preconnect",
+                href: "https://fonts.googleapis.com",
+            },
+        },
+        {
+            tagName: "link",
+            attributes: {
+                rel: "preconnect",
+                href: "https://fonts.gstatic.com",
+                crossorigin: "true",
+            },
+        },
+        {
+            tagName: "link",
+            attributes: {
+                rel: "stylesheet",
+                href: "https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap",
+            },
+        },
+    ],
+
     themeConfig: {
         // Replace with your project's social card
         image: "img/docusaurus-social-card.jpg",
@@ -73,10 +98,10 @@ const config: Config = {
             respectPrefersColorScheme: false,
         },
         navbar: {
-            title: "My Site",
+            title: "Tengu",
             logo: {
-                alt: "My Site Logo",
-                src: "img/logo.svg",
+                alt: "Tengu Logo",
+                src: "img/tengu.svg",
             },
             items: [
                 {
