@@ -11,16 +11,16 @@ import styles from "./index.module.css";
 function HomepageHeader() {
     const { siteConfig } = useDocusaurusContext();
     return (
-        <header className={clsx("hero hero--primary", styles.heroBanner)}>
+        <header
+            className={clsx("hero hero--primary background", styles.heroBanner)}
+        >
             <div className="container">
                 <Heading as="h1" className="hero__title">
                     <div>
                         <img
                             src="/img/tengu.svg"
                             alt="Tengu Logo"
-                            width="64"
-                            height="64"
-                            style={{ display: "inline-block" }}
+                            className="w-16 h-16"
                         />
                     </div>
                     {siteConfig.title}
