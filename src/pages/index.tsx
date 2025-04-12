@@ -43,8 +43,8 @@ export default function Home(): ReactNode {
     const { siteConfig } = useDocusaurusContext();
     return (
         <Layout
-            title={`Hello from ${siteConfig.title}`}
-            description="Description will go into a meta tag in <head />"
+            title={`一站式加密桌面客户端`}
+            description="一款安全、直观、易用的桌面应用，让加密资产管理和交易变得轻而易举。"
         >
             <HomepageHeader />
             <main>
