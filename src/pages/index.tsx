@@ -14,18 +14,16 @@ function HomepageHeader() {
         <header className={clsx("hero hero--primary", styles.heroBanner)}>
             <div className="container">
                 <Heading as="h1" className="hero__title">
-                    <div style={{ marginBottom: "10px", fontSize: "2.5rem" }}>
-                        👺
-                    </div>
+                    <div>👺</div>
                     {siteConfig.title}
                 </Heading>
                 <p className="hero__subtitle">{siteConfig.tagline}</p>
                 <div className={styles.buttons}>
                     <Link
-                        className="button button--secondary button--lg"
+                        className="button button--secondary button--lg fancy-button"
                         to="/docs/intro"
                     >
-                        <span className="emoji">⌛</span> 一分钟指南
+                        ⌛ 一分钟指南
                     </Link>
                 </div>
             </div>

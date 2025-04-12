@@ -6,7 +6,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
     title: "Tengu",
-    tagline: "一站式全能加密桌面客户端",
+    tagline: "一站式加密桌面客户端",
     favicon: "img/tengu.svg",
 
     // Set the production url of your site here
@@ -64,37 +64,12 @@ const config: Config = {
         ],
     ],
 
-    headTags: [
-        {
-            tagName: "link",
-            attributes: {
-                rel: "preconnect",
-                href: "https://fonts.googleapis.com",
-            },
-        },
-        {
-            tagName: "link",
-            attributes: {
-                rel: "preconnect",
-                href: "https://fonts.gstatic.com",
-                crossorigin: "true",
-            },
-        },
-        {
-            tagName: "link",
-            attributes: {
-                rel: "stylesheet",
-                href: "https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Pacifico&display=swap",
-            },
-        },
-    ],
-
     themeConfig: {
         // Replace with your project's social card
         image: "img/docusaurus-social-card.jpg",
         colorMode: {
             defaultMode: "dark",
-            disableSwitch: false,
+            disableSwitch: true,
             respectPrefersColorScheme: false,
         },
         navbar: {
@@ -112,7 +87,7 @@ const config: Config = {
                 },
                 { to: "/blog", label: "Blog", position: "left" },
                 {
-                    href: "https://github.com/facebook/docusaurus",
+                    href: "https://github.com/to1dev/tengu",
                     label: "GitHub",
                     position: "right",
                 },
