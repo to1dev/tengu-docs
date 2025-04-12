@@ -88,8 +88,8 @@ const config: Config = {
                 { to: "/blog", label: "博客", position: "left" },
                 {
                     href: "https://github.com/to1dev/tengu",
-                    label: "GitHub",
                     position: "right",
+                    className: "header-github-link",
                 },
             ],
         },
