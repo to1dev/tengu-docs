@@ -6,7 +6,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
     title: "Tengu",
-    tagline: "The All-in-One Crypto Desktop Client",
+    tagline: "一站式全能加密桌面客户端",
     favicon: "img/tengu.svg",
 
     // Set the production url of your site here
@@ -84,7 +84,7 @@ const config: Config = {
             tagName: "link",
             attributes: {
                 rel: "stylesheet",
-                href: "https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap",
+                href: "https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Pacifico&display=swap",
             },
         },
     ],
