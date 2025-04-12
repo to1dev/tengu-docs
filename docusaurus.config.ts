@@ -83,9 +83,9 @@ const config: Config = {
                     type: "docSidebar",
                     sidebarId: "tutorialSidebar",
                     position: "left",
-                    label: "Tutorial",
+                    label: "文档",
                 },
-                { to: "/blog", label: "Blog", position: "left" },
+                { to: "/blog", label: "博客", position: "left" },
                 {
                     href: "https://github.com/to1dev/tengu",
                     label: "GitHub",
