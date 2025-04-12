@@ -77,3 +77,22 @@
     transition: background-color var(--ifm-transition-fast)
         var(--ifm-transition-timing-default);
 }
+
+.header-github-link:hover::before {
+    background-color: var(--ifm-navbar-link-hover-color);
+}
+
+.header-x-link::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    display: flex;
+    background-color: var(--ifm-navbar-link-color);
+    mask-image: url("data:image/svg+xml;base64,PHN2ZyAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgd2lkdGg9IjI0IiAgaGVpZ2h0PSIyNCIgIHZpZXdCb3g9IjAgMCAyNCAyNCIgIGZpbGw9Im5vbmUiICBzdHJva2U9ImN1cnJlbnRDb2xvciIgIHN0cm9rZS13aWR0aD0iMiIgIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgIHN0cm9rZS1saW5lam9pbj0icm91bmQiICBjbGFzcz0iaWNvbiBpY29uLXRhYmxlciBpY29ucy10YWJsZXItb3V0bGluZSBpY29uLXRhYmxlci1icmFuZC14Ij48cGF0aCBzdHJva2U9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNNCA0bDExLjczMyAxNmg0LjI2N2wtMTEuNzMzIC0xNnoiIC8+PHBhdGggZD0iTTQgMjBsNi43NjggLTYuNzY4bTIuNDYgLTIuNDZsNi43NzIgLTYuNzcyIiAvPjwvc3ZnPg==");
+    transition: background-color var(--ifm-transition-fast)
+        var(--ifm-transition-timing-default);
+}
+
+.header-x-link:hover::before {
+    background-color: var(--ifm-navbar-link-hover-color);
+}

@@ -87,9 +87,16 @@ const config: Config = {
                 },
                 { to: "/blog", label: "博客", position: "left" },
                 {
+                    href: "https://x.com/tengu_ai",
+                    className: "header-x-link",
+                    position: "right",
+                    "aria-label": "X",
+                },
+                {
                     href: "https://github.com/to1dev/tengu",
                     position: "right",
                     className: "header-github-link",
+                    "aria-label": "GitHub repository",
                 },
             ],
         },
@@ -136,7 +143,7 @@ const config: Config = {
                     ],
                 },
             ],
-            copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+            copyright: `&copy; ${new Date().getFullYear()} Tengu. 软件遵循 <a href="https://github.com/to1dev/tengu/blob/main/LICENSE" target="_blank">AGPLv3</a> 和 <a href="https://github.com/to1dev/tengu/blob/main/COMMERCIAL_LICENSE.md" target="_blank">商业</a> 许可证, 网站由 <a href="https://arc20.me/to1dev" target="_blank">@to1dev</a> 制作`,
         },
         prism: {
             theme: prismThemes.github,
