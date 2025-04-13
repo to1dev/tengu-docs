@@ -37,10 +37,6 @@ const config: Config = {
             {
                 docs: {
                     sidebarPath: "./sidebars.ts",
-                    // Please change this to your repo.
-                    // Remove this to remove the "edit this page" links.
-                    editUrl:
-                        "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
                 },
                 blog: {
                     showReadingTime: true,
@@ -48,10 +44,6 @@ const config: Config = {
                         type: ["rss", "atom"],
                         xslt: true,
                     },
-                    // Please change this to your repo.
-                    // Remove this to remove the "edit this page" links.
-                    editUrl:
-                        "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
                     // Useful options to enforce blogging best practices
                     onInlineTags: "warn",
                     onInlineAuthors: "warn",
@@ -138,6 +130,19 @@ const config: Config = {
                         },
                         {
                             label: "源码",
+                            href: "https://github.com/to1dev/tengu",
+                        },
+                    ],
+                },
+                {
+                    title: "法律",
+                    items: [
+                        {
+                            label: "隐私",
+                            to: "/blog",
+                        },
+                        {
+                            label: "条款",
                             href: "https://github.com/to1dev/tengu",
                         },
                     ],
