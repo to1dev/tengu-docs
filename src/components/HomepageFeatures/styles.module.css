@@ -3,9 +3,22 @@
     align-items: center;
     padding: 2rem 0;
     width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 12rem;
 }
 
 .featureSvg {
     height: 200px;
     width: 200px;
+}
+
+.wave {
+    display: inline-block;
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 100;
 }

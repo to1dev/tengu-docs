@@ -126,6 +126,16 @@ export default function HomepageFeatures(): ReactNode {
                     ))}
                 </div>
             </div>
+            <svg
+                className={styles.wave}
+                viewBox="0 0 1440 320"
+                preserveAspectRatio="none"
+            >
+                <path
+                    fill="rgb(46, 133, 85)"
+                    d="M0,256L60,240C120,224,240,192,360,165.3C480,139,600,117,720,122.7C840,128,960,160,1080,160C1200,160,1320,128,1380,112L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+                ></path>
+            </svg>
         </section>
     );
 }
