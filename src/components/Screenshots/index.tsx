@@ -13,7 +13,7 @@ const FeatureList: ScreenshotItem[] = [];
 
 export default function Screenshots(): ReactNode {
     return (
-        <section className={clsx("hero hero--primary", styles.screenshots)}>
+        <section className={clsx("hero", styles.screenshots)}>
             <div className="container">
                 <div className="row">[Screenshots]</div>
             </div>

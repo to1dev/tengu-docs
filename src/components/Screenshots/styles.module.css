@@ -1,4 +1,6 @@
 .screenshots {
+    background-color: #29784c;
+    color: white;
     display: flex;
     align-items: center;
     padding: 2rem 0;
