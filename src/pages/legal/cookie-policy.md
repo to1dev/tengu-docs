@@ -33,7 +33,7 @@ Tengu 是一款本地桌面加密软件，我们尊重您的隐私，并尽量�
 
 我们保留随时更新本 Cookie 政策的权利。任何更新将在本站发布，并立即生效。
 
-如您对 Cookie 使用有任何疑问，请联系：**admin@to1.dev**
+如您对 Cookie 使用有任何疑问，请联系：**tengu@to1.dev**
 
 ---
 
@@ -72,4 +72,4 @@ Tengu is a local desktop application. We respect your privacy and aim to minimiz
 
 We reserve the right to update this Cookie Policy at any time. Changes will be posted here and become effective immediately.
 
-If you have any questions about our cookie use, please contact: **admin@to1.dev**
+If you have any questions about our cookie use, please contact: **tengu@to1.dev**

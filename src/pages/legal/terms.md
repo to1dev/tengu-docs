@@ -48,7 +48,7 @@ Tengu 以“现状”提供，不提供任何明示或暗示的担保，包括�
 
 我们有权随时更新本使用条款，更新后的条款将在官网上公布并立即生效。您继续使用软件即视为接受新条款。
 
-如对条款有任何疑问，请联系：**admin@to1.dev**
+如对条款有任何疑问，请联系：**tengu@to1.dev**
 
 ---
 
@@ -102,4 +102,4 @@ Tengu is provided "as-is", without warranties of any kind—express or implied. 
 
 We reserve the right to update these Terms at any time. Changes will take effect immediately upon publication on the official website. Continued use of the software implies acceptance of the updated Terms.
 
-For questions about these terms, contact: **admin@to1.dev**
+For questions about these terms, contact: **tengu@to1.dev**

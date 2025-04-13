@@ -38,7 +38,7 @@
 - 我们不会出售、共享或以任何方式泄露用户信息。
 - Tengu 是开源项目，您可以随时审查所有源代码与数据处理流程。
 
-如您对隐私政策有任何疑问，请联系：**admin@to1.dev**
+如您对隐私政策有任何疑问，请联系：**tengu@to1.dev**
 
 ---
 
@@ -82,4 +82,4 @@ Your privacy and data security are extremely important to us. Tengu is a fully l
 - We do not sell, share, or expose any user data in any form.
 - Tengu is fully open-source, and you are free to audit all code and data handling mechanisms.
 
-If you have any questions about this privacy policy, please contact us at: **admin@to1.dev**
+If you have any questions about this privacy policy, please contact us at: **tengu@to1.dev**

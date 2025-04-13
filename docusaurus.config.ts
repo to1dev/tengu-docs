@@ -134,7 +134,7 @@ const config: Config = {
                         },
                         {
                             label: "许可证",
-                            href: "https://github.com/to1dev/tengu",
+                            href: "/license/dual_license",
                         },
                     ],
                 },
