@@ -35,8 +35,8 @@ const FeatureList: FeatureItem[] = [
         image: require("@site/static/img/asset.png").default,
         description: (
             <>
-                基于 gRPC 和 WebSocket
-                实现高速监听，实时追踪地址变动、交易记录与合约交互，快速获取链上动态提醒。
+                基于本地的 gRPC 和 WebSocket
+                高速监听，实时追踪地址变动、交易记录与合约交互，快速获取链上动态提醒。
             </>
         ),
     },
@@ -85,7 +85,7 @@ const FeatureList: FeatureItem[] = [
         image: require("@site/static/img/industrial.png").default,
         description: (
             <>
-                规划集成 AI 智能交易分析、跨链桥接与 DeFi
+                集成 AI 智能交易分析、跨链桥接与 DeFi
                 聚合交易，持续迭代升级，迈向下一代本地化加密资产平台。
             </>
         ),
