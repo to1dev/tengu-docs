@@ -3,6 +3,14 @@ import clsx from "clsx";
 import Heading from "@theme/Heading";
 import styles from "./styles.module.css";
 
+type ScreenshotItem = {
+    title: string;
+    image?: string;
+    description: ReactNode;
+};
+
+const FeatureList: ScreenshotItem[] = [];
+
 export default function Screenshots(): ReactNode {
     return (
         <section className={clsx("hero hero--primary", styles.screenshots)}>
