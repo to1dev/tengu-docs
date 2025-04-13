@@ -103,8 +103,6 @@ function Feature({ title, Svg, image, description }: FeatureItem) {
                         src={image}
                         className={styles.featureImg}
                         alt={title}
-                        width={200}
-                        height={200}
                     />
                 ) : null}
             </div>

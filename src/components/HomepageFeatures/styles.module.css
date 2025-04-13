@@ -5,10 +5,11 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-    padding-bottom: 12rem;
+    padding-bottom: 160px;
 }
 
-.featureSvg {
+.featureSvg,
+.featureImg {
     height: 200px;
     width: 200px;
 }
@@ -19,6 +20,6 @@
     bottom: -1rem;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 180px;
     z-index: 100;
 }
