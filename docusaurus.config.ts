@@ -96,10 +96,14 @@ const config: Config = {
             style: "dark",
             links: [
                 {
-                    title: "文档",
+                    title: "学习",
                     items: [
                         {
-                            label: "教程",
+                            label: "简介",
+                            to: "/docs/intro",
+                        },
+                        {
+                            label: "下载与安装",
                             to: "/docs/intro",
                         },
                     ],
@@ -168,7 +172,7 @@ const config: Config = {
                     ],
                 },
             ],
-            copyright: `&copy; ${new Date().getFullYear()} Tengu. 软件基于 <a href="https://github.com/to1dev/tengu/blob/main/LICENSE" target="_blank">AGPLv3</a> 与 <a href="https://github.com/to1dev/tengu/blob/main/COMMERCIAL_LICENSE.md" target="_blank">商业许可证</a> 双授权, 由 <a href="https://arc20.me/to1dev" target="_blank">@to1dev</a> 精心打造`,
+            copyright: `&copy; ${new Date().getFullYear()} Tengu. 软件基于 <a href="/license/agplv3">AGPLv3</a> 与 <a href="/license/dual_license">商业许可证</a> 双授权, 由 <a href="https://x.com/to1dev" target="_blank">@to1dev</a> 精心打造`,
         },
         prism: {
             theme: prismThemes.github,
