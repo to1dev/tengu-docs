@@ -132,6 +132,10 @@ const config: Config = {
                             label: "源码",
                             href: "https://github.com/to1dev/tengu",
                         },
+                        {
+                            label: "许可证",
+                            href: "https://github.com/to1dev/tengu",
+                        },
                     ],
                 },
                 {
@@ -139,27 +143,27 @@ const config: Config = {
                     items: [
                         {
                             label: "隐私",
-                            to: "/legals/privacy",
+                            to: "/legal/privacy",
                         },
                         {
                             label: "条款",
-                            href: "/legals/terms",
+                            href: "/legal/terms",
                         },
                         {
                             label: "最终用户许可协议",
-                            href: "/legals/eula",
+                            href: "/legal/eula",
                         },
                         {
                             label: "免责声明",
-                            href: "/legals/disclaimer",
+                            href: "/legal/disclaimer",
                         },
                         {
                             label: "退款政策",
-                            href: "/legals/refund-policy",
+                            href: "/legal/refund-policy",
                         },
                         {
                             label: "Cookie Policy",
-                            href: "/legals/cookie-policy",
+                            href: "/legal/cookie-policy",
                         },
                     ],
                 },
