@@ -146,6 +146,18 @@ const config: Config = {
                             href: "/legals/terms",
                         },
                         {
+                            label: "最终用户许可协议",
+                            href: "/legals/eula",
+                        },
+                        {
+                            label: "免责声明",
+                            href: "/legals/disclaimer",
+                        },
+                        {
+                            label: "退款政策",
+                            href: "/legals/refund-policy",
+                        },
+                        {
                             label: "Cookie Policy",
                             href: "/legals/cookie-policy",
                         },
