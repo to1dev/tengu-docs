@@ -117,7 +117,7 @@ const config: Config = {
                         },
                         {
                             label: "Telegram",
-                            href: "https://t.me/tengu",
+                            href: "https://t.me/TenguAI",
                         },
                     ],
                 },
