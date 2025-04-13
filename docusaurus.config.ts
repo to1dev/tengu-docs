@@ -139,11 +139,15 @@ const config: Config = {
                     items: [
                         {
                             label: "隐私",
-                            to: "/blog",
+                            to: "/legals/privacy",
                         },
                         {
                             label: "条款",
-                            href: "https://github.com/to1dev/tengu",
+                            href: "/legals/terms",
+                        },
+                        {
+                            label: "Cookie Policy",
+                            href: "/legals/cookie-policy",
                         },
                     ],
                 },
