@@ -1,7 +1,7 @@
 # Tengu Dual Licensing Agreement – Commercial License Terms
 **Version 1.6 – Effective March 1, 2025**
 
-This document outlines the terms for the Commercial License of Tengu. The free version remains available under the GNU Affero General Public License v3.0 (AGPLv3) as detailed in [LICENSE](./agplv3). By purchasing a commercial license via SOL payment, Tengu Token (TENGU), or holding a Tengu NFT, you agree to be bound by the terms below. NFT holders receive Tier 2 rights and may earn TENGU rewards, including potential airdrops. For inquiries or to purchase a license or NFT, contact us at [tengu@to1.dev].
+This document outlines the terms for the Commercial License of Tengu. The free version remains available under the GNU Affero General Public License v3.0 (AGPLv3) as detailed in [LICENSE](/license/agplv3). By purchasing a commercial license via SOL payment, Tengu Token (TENGU), or holding a Tengu NFT, you agree to be bound by the terms below. NFT holders receive Tier 2 rights and may earn TENGU rewards, including potential airdrops. For inquiries or to purchase a license or NFT, contact us at [tengu@to1.dev].
 
 ---
 

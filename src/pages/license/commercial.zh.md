@@ -1,7 +1,7 @@
 # Tengu 双许可证协议 —— 商业许可条款
 **版本 1.6 – 生效日期：2025 年 3 月 1 日**
 
-本文件阐述了 Tengu 的商业授权条款。Tengu 的免费版本仍依据 GNU Affero 通用公共许可证 v3.0（AGPLv3）分发，详见 [LICENSE](./agplv3)。
+本文件阐述了 Tengu 的商业授权条款。Tengu 的免费版本仍依据 GNU Affero 通用公共许可证 v3.0（AGPLv3）分发，详见 [LICENSE](/license/agplv3)。
 
 通过支付 SOL、Tengu Token（TENGU）或持有 Tengu NFT 获取商业授权，即表示您接受以下所有条款。NFT 持有者可获得 Tier 2 权限，并可享受 TENGU 奖励和空投机会。如有疑问或想购买授权或 NFT，请联系：[tengu@to1.dev]。
 
