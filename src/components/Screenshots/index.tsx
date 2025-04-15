@@ -7,94 +7,62 @@ import styles from "./styles.module.css";
 type ScreenshotItem = {
     title: string;
     image?: string;
-    description: ReactNode;
+    width?: number;
+    height?: number;
+    description?: ReactNode;
     cropX?: number;
     cropY?: number;
+    scale?: number;
 };
 
 const ScreenshotList: ScreenshotItem[] = [
     {
-        title: "多链资产一站管理",
+        title: "主界面",
         image: require("@site/static/img/screenshots/s1.png").default,
-        description: (
-            <>
-                支持比特币、以太坊、Solana、Sui等主流公链，统一创建与导入钱包，轻松查看余额与交易，全面掌控多链资产。
-            </>
-        ),
+        width: 3440,
+        height: 1440,
         cropX: 150,
         cropY: 150,
     },
     {
-        title: "安全与隐私保护",
+        title: "隐私保护",
         image: require("@site/static/img/screenshots/s1.png").default,
-        description: (
-            <>
-                私钥本地保存，助记词遵循 BIP32 / BIP39 标准，敏感数据通过 AES
-                加密处理，确保资产不上传、不泄露、不中断。
-            </>
-        ),
+        width: 3440,
+        height: 1440,
         cropX: 150,
         cropY: 150,
     },
     {
-        title: "实时链上监控系统",
-        image: require("@site/static/img/screenshots/s1.png").default,
-        description: (
-            <>
-                基于本地的 gRPC 和 WebSocket
-                高速监听，实时追踪地址变动、交易记录与合约交互，快速获取链上动态提醒。
-            </>
-        ),
+        title: "多链钱包",
+        image: require("@site/static/img/screenshots/s3.png").default,
+        width: 1770,
+        height: 1094,
         cropX: 150,
         cropY: 150,
     },
     {
-        title: "高性能跨平台体验",
+        title: "原生性能",
         image: require("@site/static/img/screenshots/s1.png").default,
-        description: (
-            <>
-                采用 C++20 与 Qt 框架打造，界面流畅、响应迅速，适配 Windows 与
-                Linux，专为重度用户设计的桌面体验。
-            </>
-        ),
         cropX: 150,
         cropY: 150,
     },
     {
-        title: "自定义脚本与插件支持",
+        title: "脚本支持",
         image: require("@site/static/img/screenshots/s1.png").default,
-        description: (
-            <>
-                内置 JavaScript 与 Lua
-                引擎，支持用户自定义功能与自动化脚本，兼容插件生态，轻松扩展未来功能。
-            </>
-        ),
         cropX: 150,
         cropY: 150,
     },
     {
-        title: "开源透明、社区共建",
+        title: "免费开源",
         image: require("@site/static/img/screenshots/s1.png").default,
-        description: (
-            <>
-                所有代码遵循 AGPLv3
-                协议，源代码公开透明，支持社区协作开发，致力打造真正由用户驱动的开源项目。
-            </>
-        ),
         cropX: 150,
         cropY: 150,
     },
     {
-        title: "持续更新与智能未来",
+        title: "智能整合",
         image: require("@site/static/img/screenshots/s1.png").default,
-        description: (
-            <>
-                集成 AI 智能交易分析、跨链桥接与 DeFi
-                聚合交易，持续迭代升级，迈向下一代本地化加密资产平台。
-            </>
-        ),
-        cropX: 300,
-        cropY: 1000,
+        cropX: 150,
+        cropY: 150,
     },
 ];
 
@@ -102,8 +70,11 @@ function Screenshot({
     title,
     image,
     description,
+    width,
+    height,
     cropX = 0,
     cropY = 0,
+    scale = 2.3,
 }: ScreenshotItem) {
     return (
         <div className={clsx("col col--4")}>
@@ -119,16 +90,24 @@ function Screenshot({
                                 <path
                                     fill="white"
                                     d="M60.3,-18.9C65.8,-2.6,49.5,21.6,27.9,36.9C6.3,52.3,-20.6,58.9,-37,47.7C-53.4,36.6,-59.1,7.8,-51.2,-11.9C-43.3,-31.5,-21.6,-41.9,2.9,-42.8C27.4,-43.7,54.8,-35.2,60.3,-18.9Z"
-                                    transform={`translate(${cropX} ${cropY}) scale(2.4)`}
+                                    transform={`translate(${cropX} ${cropY}) scale(${scale})`}
                                 />
                             </mask>
                         </defs>
 
                         <image
                             href={image}
-                            width="3440"
-                            height="1440"
+                            width={width}
+                            height={height}
                             mask="url(#myMask)"
+                        />
+
+                        <path
+                            fill="none"
+                            d="M60.3,-18.9C65.8,-2.6,49.5,21.6,27.9,36.9C6.3,52.3,-20.6,58.9,-37,47.7C-53.4,36.6,-59.1,7.8,-51.2,-11.9C-43.3,-31.5,-21.6,-41.9,2.9,-42.8C27.4,-43.7,54.8,-35.2,60.3,-18.9Z"
+                            transform={`translate(${cropX} ${cropY}) scale(${scale})`}
+                            stroke="white"
+                            strokeWidth="5"
                         />
                     </svg>
                 )}

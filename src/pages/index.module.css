@@ -17,6 +17,14 @@
     justify-content: center;
 }
 
+.fuckoff {
+    font-family: "milk-script";
+    background-color: #29784c;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
 .wave {
     display: inline-block;
     position: absolute;
