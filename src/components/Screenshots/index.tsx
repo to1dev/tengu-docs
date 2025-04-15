@@ -21,6 +21,8 @@ const ScreenshotList: ScreenshotItem[] = [
                 支持比特币、以太坊、Solana、Sui等主流公链，统一创建与导入钱包，轻松查看余额与交易，全面掌控多链资产。
             </>
         ),
+        cropX: 150,
+        cropY: 150,
     },
     {
         title: "安全与隐私保护",
@@ -31,6 +33,8 @@ const ScreenshotList: ScreenshotItem[] = [
                 加密处理，确保资产不上传、不泄露、不中断。
             </>
         ),
+        cropX: 150,
+        cropY: 150,
     },
     {
         title: "实时链上监控系统",
@@ -41,6 +45,8 @@ const ScreenshotList: ScreenshotItem[] = [
                 高速监听，实时追踪地址变动、交易记录与合约交互，快速获取链上动态提醒。
             </>
         ),
+        cropX: 150,
+        cropY: 150,
     },
     {
         title: "高性能跨平台体验",
@@ -51,6 +57,8 @@ const ScreenshotList: ScreenshotItem[] = [
                 Linux，专为重度用户设计的桌面体验。
             </>
         ),
+        cropX: 150,
+        cropY: 150,
     },
     {
         title: "自定义脚本与插件支持",
@@ -61,6 +69,8 @@ const ScreenshotList: ScreenshotItem[] = [
                 引擎，支持用户自定义功能与自动化脚本，兼容插件生态，轻松扩展未来功能。
             </>
         ),
+        cropX: 150,
+        cropY: 150,
     },
     {
         title: "开源透明、社区共建",
@@ -71,6 +81,8 @@ const ScreenshotList: ScreenshotItem[] = [
                 协议，源代码公开透明，支持社区协作开发，致力打造真正由用户驱动的开源项目。
             </>
         ),
+        cropX: 150,
+        cropY: 150,
     },
     {
         title: "持续更新与智能未来",
@@ -81,6 +93,8 @@ const ScreenshotList: ScreenshotItem[] = [
                 聚合交易，持续迭代升级，迈向下一代本地化加密资产平台。
             </>
         ),
+        cropX: 300,
+        cropY: 1000,
     },
 ];
 
@@ -95,13 +109,28 @@ function Screenshot({
         <div className={clsx("col col--4")}>
             <div className="text--center">
                 {image && (
-                    <div
-                        className={styles.featureImgContainer}
-                        style={{
-                            backgroundImage: `url(${image})`,
-                            backgroundPosition: `-${cropX}px -${cropY}px`,
-                        }}
-                    />
+                    <svg
+                        width="300"
+                        height="300"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <defs>
+                            <mask id="myMask">
+                                <path
+                                    fill="white"
+                                    d="M60.3,-18.9C65.8,-2.6,49.5,21.6,27.9,36.9C6.3,52.3,-20.6,58.9,-37,47.7C-53.4,36.6,-59.1,7.8,-51.2,-11.9C-43.3,-31.5,-21.6,-41.9,2.9,-42.8C27.4,-43.7,54.8,-35.2,60.3,-18.9Z"
+                                    transform={`translate(${cropX} ${cropY}) scale(2.4)`}
+                                />
+                            </mask>
+                        </defs>
+
+                        <image
+                            href={image}
+                            width="3440"
+                            height="1440"
+                            mask="url(#myMask)"
+                        />
+                    </svg>
                 )}
             </div>
             <div className="text--center padding-horiz--md">
