@@ -140,6 +140,10 @@ const config: Config = {
                             label: "许可证",
                             href: "/license/dual_license",
                         },
+                        {
+                            label: "白皮书",
+                            href: "/whitepaper",
+                        },
                     ],
                 },
                 {
@@ -175,8 +179,9 @@ const config: Config = {
             copyright: `&copy; ${new Date().getFullYear()} Tengu. 软件基于 <a href="/license/agplv3">AGPLv3</a> 与 <a href="/license/dual_license">商业许可证</a> 双授权, 由 <a href="https://x.com/to1dev" target="_blank">@to1dev</a> 精心打造`,
         },
         prism: {
-            theme: prismThemes.github,
+            theme: prismThemes.dracula,
             darkTheme: prismThemes.dracula,
+            additionalLanguages: ["powershell", "bash", "json", "lua"],
         },
     } satisfies Preset.ThemeConfig,
 };
