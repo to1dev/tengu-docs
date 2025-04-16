@@ -19,6 +19,11 @@ const ScreenshotList: ScreenshotItem[] = [
     {
         title: "主界面",
         image: require("@site/static/img/screenshots/s1.png").default,
+        description: (
+            <>
+                支持比特币、以太坊、Solana、Sui等主流公链，统一创建与导入钱包，轻松查看余额与交易，全面掌控多链资产。
+            </>
+        ),
         width: 3440,
         height: 1440,
         cropX: 150,
@@ -27,6 +32,12 @@ const ScreenshotList: ScreenshotItem[] = [
     {
         title: "隐私保护",
         image: require("@site/static/img/screenshots/s1.png").default,
+        description: (
+            <>
+                私钥本地保存，助记词遵循 BIP32 / BIP39 标准，敏感数据通过 AES
+                加密处理，确保资产不上传、不泄露、不中断。
+            </>
+        ),
         width: 3440,
         height: 1440,
         cropX: 150,
@@ -35,6 +46,12 @@ const ScreenshotList: ScreenshotItem[] = [
     {
         title: "多链钱包",
         image: require("@site/static/img/screenshots/s3.png").default,
+        description: (
+            <>
+                基于本地的 gRPC 和 WebSocket
+                高速监听，实时追踪地址变动、交易记录与合约交互，快速获取链上动态提醒。
+            </>
+        ),
         width: 1770,
         height: 1094,
         cropX: 150,
@@ -43,24 +60,47 @@ const ScreenshotList: ScreenshotItem[] = [
     {
         title: "原生性能",
         image: require("@site/static/img/screenshots/s1.png").default,
+        description: (
+            <>
+                采用 C++20 与 Qt 框架打造，界面流畅、响应迅速，适配 Windows 与
+                Linux，专为重度用户设计的桌面体验。
+            </>
+        ),
         cropX: 150,
         cropY: 150,
     },
     {
         title: "脚本支持",
         image: require("@site/static/img/screenshots/s1.png").default,
+        description: (
+            <>
+                内置 JavaScript 与 Lua 引擎，支持用户自定义功能与自动化脚本，兼容插件生态，灵活扩展未来更多强大功能与可能。
+            </>
+        ),
         cropX: 150,
         cropY: 150,
     },
     {
         title: "免费开源",
         image: require("@site/static/img/screenshots/s1.png").default,
+        description: (
+            <>
+                所有代码遵循 AGPLv3
+                协议，源代码公开透明，支持社区协作开发，致力打造真正由用户驱动的开源项目。
+            </>
+        ),
         cropX: 150,
         cropY: 150,
     },
     {
         title: "智能整合",
         image: require("@site/static/img/screenshots/s1.png").default,
+        description: (
+            <>
+                购买 NFT 即可获得商业授权与功能优先访问资格，持有者还可获得
+                TENGU 代币奖励与生态治理参与机会。
+            </>
+        ),
         cropX: 150,
         cropY: 150,
     },
@@ -136,7 +176,7 @@ export default function Screenshots(): ReactNode {
                 preserveAspectRatio="none"
             >
                 <path
-                    fill="#303846"
+                    fill="#44475A"
                     d="M0,192L80,181.3C160,171,320,149,480,160C640,171,800,213,960,218.7C1120,224,1280,192,1360,176L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
                 ></path>
             </svg>
