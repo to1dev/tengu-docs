@@ -6,6 +6,7 @@ import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 import Screenshots from "@site/src/components/Screenshots";
+import FAQs from "../components/FAQs";
 
 import styles from "./index.module.css";
 
@@ -61,6 +62,7 @@ export default function Home(): ReactNode {
             <main>
                 <HomepageFeatures />
                 <Screenshots />
+                <FAQs />
             </main>
         </Layout>
     );
