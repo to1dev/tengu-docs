@@ -21,8 +21,11 @@ const FAQList: FAQItem[] = [
 
 function FAQ({ question, answer }: FAQItem) {
     return (
-        <div className={clsx("col col--4")}>
-            <div className="text--center"></div>
+        <div className={clsx("col col--12")}>
+            <div className="text--center">
+                <h1>question</h1>
+                <p>answer</p>
+            </div>
         </div>
     );
 }
