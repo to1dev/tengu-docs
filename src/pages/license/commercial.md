@@ -57,8 +57,8 @@ Refers to an individual or entity holding a valid Tengu NFT, issued or recognize
 2.3. **Tier 3 – 5 SOL or Equivalent TENGU:**
 - Upon payment of 5 SOL or equivalent TENGU (market rate), the Licensee is granted the rights in Section 3.3. NFT Holders upgrading pay 4 SOL or equivalent TENGU.
 
-2.4. **Tier 4 – 30 SOL or Equivalent TENGU:**
-- Upon payment of 30 SOL or equivalent TENGU (market rate), the Licensee is granted the rights in Section 3.4. NFT Holders upgrading pay 29 SOL or equivalent TENGU.
+2.4. **Tier 4 – 50 SOL or Equivalent TENGU:**
+- Upon payment of 50 SOL or equivalent TENGU (market rate), the Licensee is granted the rights in Section 3.4. NFT Holders upgrading pay 29 SOL or equivalent TENGU.
 
 2.5. **Tier Adjustments:**
 - **Upgrades:** The Licensee may upgrade by paying the difference between tiers in SOL or TENGU (1 SOL/TENGU credit for NFT Holders). Upgrades take effect upon payment.
@@ -88,7 +88,7 @@ Refers to an individual or entity holding a valid Tengu NFT, issued or recognize
 - (a) Right to sublicense Tengu or modifications, subject to Section 5.
 - (b) Integration into proprietary products without source code disclosure.
 
-3.4. **Tier 4 Rights (30 SOL or Equivalent TENGU):**
+3.4. **Tier 4 Rights (50 SOL or Equivalent TENGU):**
 - In addition to Tier 3:
 - (a) Priority technical support (48-hour response, business days) and premium updates.
 - (b) Binary-only distribution without source code disclosure.
