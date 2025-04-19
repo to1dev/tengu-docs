@@ -1,5 +1,5 @@
 .faqs {
-    background-color: #44475A;
+    background-color: #44475a;
     color: white;
     display: flex;
     align-items: center;
@@ -8,6 +8,12 @@
     position: relative;
     overflow: hidden;
     padding-bottom: 160px;
+}
+
+.featureSvg,
+.featureImg {
+    height: 200px;
+    width: 200px;
 }
 
 .wave {

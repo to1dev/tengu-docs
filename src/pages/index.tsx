@@ -7,6 +7,9 @@ import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 import Screenshots from "@site/src/components/Screenshots";
 import FAQs from "../components/FAQs";
+import CTA1 from "../components/CTA1";
+import CTA2 from "../components/CTA2";
+import CTA3 from "../components/CTA3";
 
 import styles from "./index.module.css";
 
@@ -35,6 +38,14 @@ function HomepageHeader() {
                             ⌛ 一分钟指南
                         </Link>
                     </div>
+                    <div className={styles.buttons}>
+                        <Link
+                            className="button button--danger button--lg fancy-button"
+                            to="/docs/intro"
+                        >
+                            💾 下载最新版
+                        </Link>
+                    </div>
                 </div>
             </header>
             <svg
@@ -61,8 +72,11 @@ export default function Home(): ReactNode {
             <HomepageHeader />
             <main>
                 <HomepageFeatures />
+                <CTA1 />
                 <Screenshots />
+                <CTA2 />
                 <FAQs />
+                <CTA3 />
             </main>
         </Layout>
     );
