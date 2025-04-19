@@ -52,6 +52,11 @@ const FAQList: FAQItem[] = [
     },
     {
         Svg: require("@site/static/img/faqs/f1.svg").default,
+        question: "Tengu 使用了哪些底层网络技术？",
+        answer: "Tengu 架构中将会融合 libtorrent 与 libdatachannel，可实现点对点数据分发与信令通讯，未来将逐步摆脱中心服务器依赖，实现真正的本地 + 去中心化架构。",
+    },
+    {
+        Svg: require("@site/static/img/faqs/f1.svg").default,
         question: "Tengu 能运行 AI 模型吗？",
         answer: "未来支持调用 OpenAI 等云端模型，也支持本地部署 llama.cpp 等轻量模型，助力交易辅助分析与数据筛选，全程无需联网依赖。",
     },
@@ -84,6 +89,16 @@ const FAQList: FAQItem[] = [
         Svg: require("@site/static/img/faqs/f1.svg").default,
         question: "可以获取链上大额交易情报吗？",
         answer: "可自定义监听链上地址与合约，捕捉鲸鱼地址异动、大额转账、抢购行为等动态，配合图表与脚本进行快速反应与策略执行。",
+    },
+    {
+        Svg: require("@site/static/img/faqs/f1.svg").default,
+        question: "Tengu 能在没有服务器的情况下运作吗？",
+        answer: "核心功能如钱包、AI、链上监控完全离线可用；借助内置 P2P 模块，还可支持本地与节点间直接通信，实现插件、数据、模块的自主共享与更新。",
+    },
+    {
+        Svg: require("@site/static/img/faqs/f1.svg").default,
+        question: "Tengu 有计划变成去中心化网络节点吗？",
+        answer: "是的。未来版本中，Tengu 将逐步演化为多功能网络节点，结合 DHT、WebRTC、P2P 网络构建一个无需服务器的分布式加密资产操作平台。",
     },
     {
         Svg: require("@site/static/img/faqs/f1.svg").default,
