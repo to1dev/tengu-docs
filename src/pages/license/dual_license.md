@@ -15,3 +15,7 @@ Users seeking commercial, proprietary, or SaaS use can purchase a commercial lic
 ## 3. NFT 授权持有者（NFT License Holders）
 If you hold a Tengu NFT license token, you are granted commercial usage rights according to your tier.
 - 👉 [View NFT License Info](/license/nft)
+
+import BackToTopButton from '@theme/BackToTopButton';
+
+<BackToTopButton />

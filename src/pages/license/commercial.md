@@ -205,3 +205,7 @@ Refers to an individual or entity holding a valid Tengu NFT, issued or recognize
 ---
 
 **By paying for a Commercial License at Tier 2, Tier 3, or Tier 4, or holding a Tengu NFT, the Licensee agrees to these terms.**
+
+import BackToTopButton from '@theme/BackToTopButton';
+
+<BackToTopButton />

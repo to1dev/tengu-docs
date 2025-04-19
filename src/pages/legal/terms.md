@@ -103,3 +103,7 @@ Tengu is provided "as-is", without warranties of any kind—express or implied. 
 We reserve the right to update these Terms at any time. Changes will take effect immediately upon publication on the official website. Continued use of the software implies acceptance of the updated Terms.
 
 For questions about these terms, contact: **tengu@to1.dev**
+
+import BackToTopButton from '@theme/BackToTopButton';
+
+<BackToTopButton />

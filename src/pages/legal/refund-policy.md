@@ -19,3 +19,7 @@ Tengu licenses and NFTs are digital goods and are non-refundable once delivered,
 - All NFT purchases are final and non-reversible.
 - In case of failed minting due to network or blockchain issues, contact support within 48 hours.
 - Duplicate or accidental payments will be reviewed case-by-case before any refund decision is made.
+
+import BackToTopButton from '@theme/BackToTopButton';
+
+<BackToTopButton />

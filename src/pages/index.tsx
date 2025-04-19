@@ -5,6 +5,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
+import BackToTopButton from "@theme/BackToTopButton";
 import Screenshots from "@site/src/components/Screenshots";
 import FAQs from "../components/FAQs";
 import CTA1 from "../components/CTA1";
@@ -77,6 +78,7 @@ export default function Home(): ReactNode {
                 <CTA2 />
                 <FAQs />
                 <CTA3 />
+                <BackToTopButton />
             </main>
         </Layout>
     );

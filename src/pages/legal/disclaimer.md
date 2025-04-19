@@ -17,3 +17,7 @@ Tengu is an open-source, locally-run crypto asset management tool. We do not pro
 - Blockchain and crypto assets carry significant risks. By using this software, you accept those risks.
 - We disclaim liability for losses due to plugin behavior, transaction failures, or market fluctuations.
 - The Software is provided “as is,” without any express or implied warranties.
+
+import BackToTopButton from '@theme/BackToTopButton';
+
+<BackToTopButton />

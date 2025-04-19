@@ -1359,3 +1359,7 @@ Tengu 不是我们创造的。
 > **你现在才刚刚开始靠近。**
 
 ---
+
+import BackToTopButton from '@theme/BackToTopButton';
+
+<BackToTopButton />

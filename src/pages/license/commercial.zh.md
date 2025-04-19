@@ -206,3 +206,7 @@
 ---
 
 📌 **支付 Tier 2 / 3 / 4 授权费用，或持有 Tengu NFT，即视为您已同意本商业授权条款。**
+
+import BackToTopButton from '@theme/BackToTopButton';
+
+<BackToTopButton />

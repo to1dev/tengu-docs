@@ -55,3 +55,7 @@ This End-User License Agreement (“Agreement”) is a legal contract between yo
 
 ### 6. Governing Principles
 - This Agreement shall be interpreted and enforced based on internationally accepted principles of contract law. In case of dispute, the parties agree to prioritize amicable resolution.
+
+import BackToTopButton from '@theme/BackToTopButton';
+
+<BackToTopButton />

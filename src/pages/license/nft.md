@@ -50,3 +50,7 @@ Tengu NFT 是部署在 Solana 区块链上的数字藏品，具有唯一性和�
 ## 📮 支持与帮助
 
 如您在 NFT 授权过程中遇到问题，请通过邮箱联系支持：**tengu@to1.dev**
+
+import BackToTopButton from '@theme/BackToTopButton';
+
+<BackToTopButton />

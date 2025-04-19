@@ -83,3 +83,7 @@ Your privacy and data security are extremely important to us. Tengu is a fully l
 - Tengu is fully open-source, and you are free to audit all code and data handling mechanisms.
 
 If you have any questions about this privacy policy, please contact us at: **tengu@to1.dev**
+
+import BackToTopButton from '@theme/BackToTopButton';
+
+<BackToTopButton />

@@ -73,3 +73,7 @@ Tengu is a local desktop application. We respect your privacy and aim to minimiz
 We reserve the right to update this Cookie Policy at any time. Changes will be posted here and become effective immediately.
 
 If you have any questions about our cookie use, please contact: **tengu@to1.dev**
+
+import BackToTopButton from '@theme/BackToTopButton';
+
+<BackToTopButton />
