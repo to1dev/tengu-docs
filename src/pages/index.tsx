@@ -6,6 +6,7 @@ import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 import BackToTopButton from "@theme/BackToTopButton";
+import Logo from "../../static/img/tengu.svg";
 import Screenshots from "@site/src/components/Screenshots";
 import FAQs from "../components/FAQs";
 import CTA1 from "../components/CTA1";
@@ -22,11 +23,7 @@ function HomepageHeader() {
                 <div className="container">
                     <Heading as="h1" className="hero__title">
                         <div>
-                            <img
-                                src="/img/tengu.svg"
-                                alt="Tengu Logo"
-                                className="w-16 h-16"
-                            />
+                            <Logo className="w-16 h-16" />
                         </div>
                         {siteConfig.title}
                     </Heading>
