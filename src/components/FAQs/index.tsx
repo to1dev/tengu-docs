@@ -53,7 +53,7 @@ const FAQList: FAQItem[] = [
     {
         Svg: require("@site/static/img/faqs/f9.svg").default,
         question: "Tengu 使用了哪些底层网络技术？",
-        answer: "Tengu 架构中将会融合 libtorrent 与 libdatachannel，可实现点对点数据分发与信令通讯，未来将逐步摆脱中心服务器依赖，实现真正的本地 + 去中心化架构。",
+        answer: "Tengu 架构中将会融合 BitTorrent 与 WebRTC，可实现点对点数据分发与信令通讯，未来将逐步摆脱中心服务器依赖，实现真正的本地 + 去中心化架构。",
     },
     {
         Svg: require("@site/static/img/faqs/f10.svg").default,
