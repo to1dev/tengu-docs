@@ -13,6 +13,10 @@ export default function CTA2(): ReactNode {
                         持有 Tengu 授权
                         NFT（Tier1–4），即可自动解锁商业权利：闭源、商用、打包、销售，无需激活码，无需服务器验证，一次购买，永久授权。
                     </footer>
+                    <footer>
+                        更重要的是，你还将享有 TENGU
+                        代币空投与生态优先权益，一张 NFT，双重赋能。
+                    </footer>
                     <div className={styles.buttons}>
                         <Link
                             className="button button--danger button--lg fancy-button"

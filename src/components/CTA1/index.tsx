@@ -11,9 +11,13 @@ export default function CTA1(): ReactNode {
                     <p>不仅是工具，更是一款可以出售的商品</p>
                     <footer>
                         Tengu
-                        商业版不仅让你闭源定制、品牌重塑，还允许你将产品打包出售、提供服务、上线平台。一套程序，N
-                        种变现路径，全看你怎么玩！
+                        商业版不仅让你闭源定制、品牌重塑，还允许你将产品打包出售、提供服务、上线平台。
                     </footer>
+                    <footer>
+                        还能享有未来 TENGU 代币的空投资格。一个
+                        NFT，不止开启商业大门，更可能成为下一个价值节点。
+                    </footer>
+                    <footer>一套程序，N 种变现路径，全看你怎么玩！</footer>
                     <div className={styles.buttons}>
                         <Link
                             className="button button--danger button--lg fancy-button"

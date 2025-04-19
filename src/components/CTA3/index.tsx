@@ -14,6 +14,10 @@ export default function CTA3(): ReactNode {
                         LOGO，然后直接卖给客户，甚至做成 SaaS 平台。Tengu
                         商业版，让每一位普通用户都能成为厂商。
                     </footer>
+                    <footer>
+                        现在购买商业版，不仅获得授权，还将锁定 TENGU
+                        代币未来空投资格，让你在使用中也有机会持币为王。
+                    </footer>
                     <div className={styles.buttons}>
                         <Link
                             className="button button--danger button--lg fancy-button"
