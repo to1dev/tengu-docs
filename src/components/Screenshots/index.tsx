@@ -24,8 +24,8 @@ const ScreenshotList: ScreenshotItem[] = [
                 支持比特币、以太坊、Solana、Sui等主流公链，统一创建与导入钱包，轻松查看余额与交易，全面掌控多链资产。
             </>
         ),
-        width: 3440,
-        height: 1440,
+        width: 512,
+        height: 512,
         cropX: 150,
         cropY: 150,
     },
@@ -38,8 +38,8 @@ const ScreenshotList: ScreenshotItem[] = [
                 加密处理，确保资产不上传、不泄露、不中断。
             </>
         ),
-        width: 3440,
-        height: 1440,
+        width: 512,
+        height: 512,
         cropX: 150,
         cropY: 150,
     },
@@ -52,8 +52,8 @@ const ScreenshotList: ScreenshotItem[] = [
                 高速监听，实时追踪地址变动、交易记录与合约交互，快速获取链上动态提醒。
             </>
         ),
-        width: 1770,
-        height: 1094,
+        width: 512,
+        height: 512,
         cropX: 150,
         cropY: 150,
     },
@@ -66,6 +66,8 @@ const ScreenshotList: ScreenshotItem[] = [
                 Linux，专为重度用户设计的桌面体验。
             </>
         ),
+        width: 512,
+        height: 512,
         cropX: 150,
         cropY: 150,
     },
@@ -74,9 +76,12 @@ const ScreenshotList: ScreenshotItem[] = [
         image: require("@site/static/img/screenshots/s1.png").default,
         description: (
             <>
-                内置 JavaScript 与 Lua 引擎，支持用户自定义功能与自动化脚本，兼容插件生态，灵活扩展未来更多强大功能与可能。
+                内置 JavaScript 与 Lua
+                引擎，支持用户自定义功能与自动化脚本，兼容插件生态，灵活扩展未来更多强大功能与可能。
             </>
         ),
+        width: 512,
+        height: 512,
         cropX: 150,
         cropY: 150,
     },
@@ -89,6 +94,8 @@ const ScreenshotList: ScreenshotItem[] = [
                 协议，源代码公开透明，支持社区协作开发，致力打造真正由用户驱动的开源项目。
             </>
         ),
+        width: 512,
+        height: 512,
         cropX: 150,
         cropY: 150,
     },
@@ -101,6 +108,8 @@ const ScreenshotList: ScreenshotItem[] = [
                 TENGU 代币奖励与生态治理参与机会。
             </>
         ),
+        width: 512,
+        height: 512,
         cropX: 150,
         cropY: 150,
     },
