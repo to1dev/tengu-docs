@@ -25,8 +25,8 @@ const FeatureList: FeatureItem[] = [
         image: require("@site/static/img/hacker.png").default,
         description: (
             <>
-                私钥本地保存，助记词遵循 BIP32 / BIP39 标准，敏感数据通过 AES
-                加密处理，确保资产不上传、不泄露、不中断。
+                私钥本地保存，助记词遵循 BIP32 / BIP39 标准，敏感数据通过
+                XSalsa20/Poly1305 加密处理，确保资产不上传、不泄露、不中断。
             </>
         ),
     },

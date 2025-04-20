@@ -18,7 +18,7 @@ const FAQList: FAQItem[] = [
     {
         Svg: require("@site/static/img/faqs/f2.svg").default,
         question: "Tengu 支持哪些操作系统？",
-        answer: "当前版本支持 Windows 10/11 系统，Linux 用户可自行从源码编译安装使用；macOS 版本已在规划中，将于后续版本中适配发布。",
+        answer: "当前版本支持 Windows 10/11 系统，目前 Linux 以及 macOS 用户需自行从源码编译安装使用；二进制版本将酌情适配发布。",
     },
     {
         Svg: require("@site/static/img/faqs/f3.svg").default,
@@ -38,7 +38,7 @@ const FAQList: FAQItem[] = [
     {
         Svg: require("@site/static/img/faqs/f6.svg").default,
         question: "我的私钥会上传到云端吗？",
-        answer: "不会。Tengu 所有私钥均本地保存，并使用 AES 加密技术存储在本机数据库中，完全不会联网或上传云端，保障用户数据私密性。",
+        answer: "不会。Tengu 所有私钥均本地保存，并使用 XSalsa20/Poly1305 加密技术存储在本机数据库中，完全不会联网或上传云端，保障用户数据私密性。",
     },
     {
         Svg: require("@site/static/img/faqs/f7.svg").default,

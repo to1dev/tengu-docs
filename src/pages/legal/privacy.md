@@ -8,7 +8,7 @@
 
 - Tengu 的所有功能均在您的本地设备上执行。
 - 我们不会收集、传输或上传您的任何私钥、助记词、钱包信息或链上数据。
-- 所有敏感信息（如私钥、助记词）仅存储于本地，并通过 AES 加密保护。
+- 所有敏感信息（如私钥、助记词）仅存储于本地，并通过 XSalsa20/Poly1305 加密保护。
 
 ### 2. 网络请求与链上数据
 
@@ -52,7 +52,7 @@ Your privacy and data security are extremely important to us. Tengu is a fully l
 
 - All core features of Tengu are executed entirely on your local machine.
 - We do not collect, transmit, or store any private keys, mnemonic phrases, wallet information, or on-chain data.
-- Sensitive data (e.g., keys and mnemonics) is stored locally and protected using AES encryption.
+- Sensitive data (e.g., keys and mnemonics) is stored locally and protected using XSalsa20/Poly1305 encryption.
 
 ### 2. Network Access & Blockchain Data
 
