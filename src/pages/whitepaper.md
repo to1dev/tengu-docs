@@ -1,5 +1,5 @@
-# 📜 Tengu 白皮书 v1.0
-*Tengu Whitepaper v1.0*
+# 📜 Tengu 白皮书 v0.1
+*Tengu Whitepaper v0.1*
 > 协议不是平台，Tengu 是执行协议意志的第一工具。
 
 ---
