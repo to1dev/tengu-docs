@@ -53,12 +53,15 @@ Refers to an individual or entity holding a valid Tengu NFT, issued or recognize
   - Paying 1 SOL; or
   - Holding a valid Tengu NFT (1 NFT = 1 Tier 2 license).
 - Rights are described in Section 3.2. NFT Holders may earn TENGU rewards, including potential airdrops, per Section 2.7.
+- Only 1,000 NFT.
 
 2.3. **Tier 3 – 5 SOL or Equivalent TENGU:**
 - Upon payment of 5 SOL or equivalent TENGU (market rate), the Licensee is granted the rights in Section 3.3. NFT Holders upgrading pay 4 SOL or equivalent TENGU.
+- Only 100 NFT.
 
 2.4. **Tier 4 – 50 SOL or Equivalent TENGU:**
 - Upon payment of 50 SOL or equivalent TENGU (market rate), the Licensee is granted the rights in Section 3.4. NFT Holders upgrading pay 29 SOL or equivalent TENGU.
+- Only 10 NFT.
 
 2.5. **Tier Adjustments:**
 - **Upgrades:** The Licensee may upgrade by paying the difference between tiers in SOL or TENGU (1 SOL/TENGU credit for NFT Holders). Upgrades take effect upon payment.
