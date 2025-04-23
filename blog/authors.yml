@@ -3,6 +3,7 @@ to1dev:
   title: A boring billionaire
   url: https://github.com/to1dev
   image_url: /img/to1dev-avatar.png
+  email: admin@to1.dev
   page:
     permalink: /to1dev
   socials:
