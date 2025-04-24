@@ -39,7 +39,7 @@ function HomepageHeader() {
                     <div className={styles.buttons}>
                         <Link
                             className="button button--danger button--lg fancy-button"
-                            to="/docs/intro"
+                            to="/docs/quickstart"
                         >
                             💾 下载最新版
                         </Link>

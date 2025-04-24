@@ -2,46 +2,56 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# 📘 入门指南
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Tengu 是一款本地运行的加密资产桌面客户端，专为初学者和高性能用户打造，融合钱包管理、行情监控、交易执行与 AI 助手功能，一切核心数据皆存于本地，无需云端、无需依赖 SaaS 服务。
 
-## Getting Started
+---
 
-Get started by **creating a new site**.
+## 🚀 安装与启动
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+1. 前往 [下载页面](./quickstart.md) 下载适配你系统的安装包。
+2. 解压后运行 `Tengu.exe`（Windows）或 `./tengu`（Linux）。
+3. 初次启动将提示创建主钱包，设置密码，完成后自动进入控制台界面。
 
-### What you'll need
+---
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+## 🔑 创建或导入钱包
 
-## Generate a new site
+- 点击「钱包」按钮，选择「新建钱包」或「导入钱包」。
+- 支持 BIP39 助记词、BIP32 派生路径，完全本地生成与加密保存。
 
-Generate a new Docusaurus site using the **classic template**.
+---
 
-The classic template will automatically be added to your project after you run the command:
+## 🌐 监控链上数据
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+- 打开「链上监控」模块，选择你感兴趣的网络（Bitcoin / Ethereum / Solana）。
+- 实时追踪地址余额、交易、DEX 池、NFT 持仓等。
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+---
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+## 📈 快速查看行情 & 执行交易
 
-## Start your site
+- 内置行情终端，支持自定义 Watchlist 和交易对图表。
+- 配合钱包签名，直接进行链上 Swap、买卖、质押等操作。
 
-Run the development server:
+---
 
-```bash
-cd my-website
-npm run start
-```
+## 🧠 启用 AI 助手（可选）
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+- 在设置中开启 AI 模型（支持本地 llama.cpp 或 OpenAI API）。
+- 提供行情摘要、项目分析、自动化策略建议。
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+---
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+## 🪙 解锁商业版 / NFT 授权功能
+
+- 拥有商业 NFT 即可解锁高级功能并获得 TENGU 代币空投权。
+- 详见：[授权说明](/license/dual_license)
+
+---
+
+📌 *本地运行 · 数据自持 · 拒绝 SaaS · 拥抱主权*
+
+---
+
