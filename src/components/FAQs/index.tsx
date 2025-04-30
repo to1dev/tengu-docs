@@ -43,7 +43,7 @@ const FAQList: FAQItem[] = [
     {
         Svg: require("@site/static/img/faqs/f7.svg").default,
         question: "默认支持哪些区块链？",
-        answer: "默认内置 BTC、ETH、SOL 三条主流公链钱包功能；借助插件机制可拓展支持更多链种，满足未来资产跨链统一管理需求。",
+        answer: "内置 BTC、ETH、SOL 三条主流公链钱包功能；借助插件机制可拓展支持更多链种，满足未来资产跨链统一管理需求。",
     },
     {
         Svg: require("@site/static/img/faqs/f8.svg").default,
