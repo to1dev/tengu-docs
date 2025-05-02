@@ -209,6 +209,113 @@ Refers to an individual or entity holding a valid Tengu NFT, issued or recognize
 
 **By paying for a Commercial License at Tier 2, Tier 3, or Tier 4, or holding a Tengu NFT, the Licensee agrees to these terms.**
 
+---
+
+### Appendix B: Governing Law, Dispute Resolution & Legal Disclaimer
+
+### B.1 Acceptance by Use
+
+By accessing or using this software, protocol, NFT, or token, you acknowledge that you have read, understood, and agreed to all provisions of this appendix. If you do not agree with any part of these terms, you must not use, access, or interact with the protocol or any of its components.
+
+---
+
+### B.2 Governing Law
+
+This Agreement shall be governed by and construed in accordance with the laws of the State of Delaware, United States, excluding its conflict of law principles.
+
+Where required by mandatory rules of the user's jurisdiction, the following local laws may apply as supplementary:
+
+* EU Users: Dutch Law
+* UK Users: Law of England and Wales
+* Singapore Users: Singapore Law
+* Hong Kong Users: Law of the Hong Kong SAR
+* Japan Users: Japanese Law
+* Mainland China Users: PRC Law (where applicable)
+* Middle East Users: UAE DIFC Law
+* Israel Users: Israeli Law
+* Turkey Users: Turkish Law
+* Iran Users: Iranian Law (user assumes all compliance risks)
+
+In case of any conflict in interpretation, the English version of this Agreement shall prevail.
+
+---
+
+### B.3 Dispute Resolution
+
+Unless otherwise agreed in writing, any disputes arising out of or in connection with this Agreement shall be finally resolved through binding arbitration in Wilmington, Delaware, administered under the Commercial Arbitration Rules of the American Arbitration Association (AAA). The arbitration shall be conducted in English. The award shall be final and enforceable worldwide.
+
+#### Optional Regional Arbitration (if the primary venue is unenforceable):
+
+* EU: The Hague under NAI Rules
+* UK: London under LCIA Rules
+* Asia: Singapore (SIAC) or Hong Kong (HKIAC)
+* International: Paris under ICC Rules
+* Middle East: Dubai (DIAC), Istanbul (ISTAC), Tel Aviv (Israeli Arbitration Law), Tehran (only if foreign arbitration is legally recognized)
+
+Users expressly waive the right to participate in class actions, joint litigation, or jury trials.
+
+---
+
+### B.4 Protocol Nature Statement
+
+This protocol is open-source, decentralized, and experimental. It is intended solely as a technical system for permissioned interaction and tooling. It does not constitute a security, financial product, commodity, fundraising mechanism, or investment advice. Acquisition, holding, or transfer of NFTs or tokens does not establish any investor relationship or legal dependency on the developers.
+
+---
+
+### B.5 Functional Limitations
+
+NFTs and tokens may only be used in the following lawful scenarios:
+
+* Protocol interaction and access validation
+* DAO governance and identity attestation
+* Invocation of APIs, AI models, and behavior-based proof systems
+
+They must not be used for unlawful activity, speculation, regulatory avoidance, or any criminal purpose.
+
+---
+
+### B.6 Liability Disclaimer
+
+The developers and contributors assume no liability for:
+
+* Loss of digital assets or protocol malfunctions
+* Transaction errors, data inaccuracies, or unrealized expectations
+* Failures arising from third-party APIs, AI models, or oracles
+* Service interruptions due to legal or regulatory changes
+
+This protocol does not constitute a service agreement and provides no warranty of availability, support, or performance.
+
+---
+
+### B.7 User Risk Acknowledgment
+
+By using the protocol, users confirm that:
+
+* They assume full responsibility for all actions and outcomes
+* They understand that tokens and NFTs are not securities or investment products
+* They have conducted all necessary legal and regulatory due diligence
+* They waive any right to punitive, indirect, or consequential damages
+
+---
+
+### B.8 Anti-Abuse and Litigation Clause
+
+* Users must provide written notice to the developers at least 30 days before initiating any legal claim
+* Frivolous or malicious litigation will lead to access termination, public disclosure, and countersuit
+* The developers reserve the right to recover all damages, including legal fees and reputational harm
+* Disputes must be handled on an individual basis; class actions and joint arbitrations are strictly prohibited
+
+---
+
+### B.9 Decentralization and Non-Custodial Disclaimer
+
+The protocol and its developers:
+
+* Do not hold or custody user assets or private keys
+* Do not intermediate, execute, or match on-chain transactions
+* Do not offer token redemption, buyback, or destruction mechanisms
+* All on-chain interactions are user-initiated and user-signed only
+
 import BackToTopButton from '@theme/BackToTopButton';
 
 <BackToTopButton />
