@@ -1,12 +1,12 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 # 🧭 快速开始
 
 ---
 
-## 📦 下载 Tengu
+## 📦 安装 Tengu
 
 ###  当前版本
 
@@ -59,5 +59,6 @@ Tengu 当前处于 Alpha 阶段，可能存在未知漏洞或异常行为。请�
 
 ## ✨ 未来属于本地
 
-我们相信，现代 PC 拥有超越云端的潜力。
+我们相信，现代 PC 拥有[超越云端的潜力](/blog/pc-is-your-super-node/)。
+
 你手中的终端，就是你的主权之地。
