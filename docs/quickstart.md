@@ -22,9 +22,9 @@ sidebar_position: 2
 
 | 文件                     | 描述                 | 下载链接 |
 | ------------------------------- | ---------------------------------- | ------------------------ |
-| `Tengu-0.0.1-alpha.reforge-windows-x64.zip`         | **主程序压缩包** | [点击下载](#)            |
-| `Tengu-0.0.1-alpha.reforge-shasums.txt` | SHA256 校验码      | [点击下载](#)            |
-| `Tengu-0.0.1-alpha.reforge-shasums.txt.asc`     | GPG 签名文件       | [点击下载](#)            |
+| `Tengu-0.0.1-alpha.reforge-windows-x64.zip`         | **主程序压缩包** | [点击下载](https://github.com/to1dev/tengu/releases/download/v0.0.1-alpha.reforge/Tengu-0.0.1-alpha.reforge-windows-x64.zip)            |
+| `Tengu-0.0.1-alpha.reforge-shasums.txt` | SHA256 校验码      | [点击下载](https://github.com/to1dev/tengu/releases/download/v0.0.1-alpha.reforge/Tengu-0.0.1-alpha.reforge-shasums.txt)            |
+| `Tengu-0.0.1-alpha.reforge-shasums.txt.asc`     | GPG 签名文件       | [点击下载](https://github.com/to1dev/tengu/releases/download/v0.0.1-alpha.reforge/Tengu-0.0.1-alpha.reforge-shasums.txt.asc)            |
 
 > 推荐校验签名与哈希，确保下载安全。🔐 [点击下载 GPG 公钥](https://keys.openpgp.org/vks/v1/by-fingerprint/E6D53772FC0A4D8CE02265E68D3A524959F3994D)
 
