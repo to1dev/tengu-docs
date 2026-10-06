@@ -28,6 +28,14 @@ bun run start
 
 原模板文档已改为 Tengu 指南，保留既有文档路径。中文商业协议现使用 `/license/commercial-zh`；旧 `/license/commercial.zh` 路径保留跳转，避免带点目录被静态服务器误判。
 
+## 视觉主题
+
+导航栏的“主题”入口提供玉庭、澄蓝、石墨、暖砂和鸢尾五套完整主题，每套支持浅色与深色。主题覆盖首页、文档、博客、授权与法律页面；移动端可在同一面板切换明暗模式。
+
+`src/themes/catalog.ts` 管理主题名称与预览，`src/css/themes.css` 管理配色和形态变量。新增主题时同步维护两处。`src/theme/Root.tsx` 注入偏好管理，导航组件仅包装原有明暗切换器，以保持框架升级兼容。
+
+主题偏好保存于本地 `tengu-visual-theme`，明暗模式沿用 Docusaurus 存储；HTML 的初始化脚本在首屏绘制前恢复主题。存储不可用或值无效时回退到玉庭，主题切换不增加字体下载或外部服务请求。
+
 ## 完整本地字体
 
 全站使用 **LXGW WenKai Screen v1.522（霞鹜文楷屏幕阅读版）完整 WOFF2**，与 `zhipan` 的完整 WOFF 对应同一上游版本。未做字符子集化，保留全部字形；字体许可见 `static/fonts/OFL.txt`。
@@ -42,6 +50,8 @@ bun run start
 需要重新转换或核验时运行 `bun run fonts:prepare`。脚本首次下载固定版本 TTF 并校验 SHA-256，之后使用 `.cache/fonts/`；转换后逐一验证完整字符映射、47,871 个字形轮廓、字宽和字体度量。生成文件需一起提交。
 
 ## 部署与缓存
+
+生产站由 Cloudflare Pages 项目 `tengu-docs` 托管，绑定 `https://tengu.to1.dev`，GitHub 的 `main` 分支提交会自动构建并部署。发布后应核对部署记录中的提交号，再验证主域名的主题切换、主要路由和字体缓存。
 
 将 `build/` 部署到静态托管服务。`static/_headers` 会复制到输出目录，为支持该格式的平台配置 `/fonts/*` 和 `/assets/*` 的一年 immutable 缓存。Nginx、CDN 等其他平台应配置等效响应头；Docusaurus 本地预览服务器不读取此文件。
 
