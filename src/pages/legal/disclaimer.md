@@ -1,23 +1,28 @@
-## 🚨 法律免责声明（Legal Disclaimer）
-
-### 中文版
-
-Tengu 是一个开源且本地运行的加密资产管理工具。我们不提供任何投资、财务或法律建议，使用本软件所产生的后果由用户自行承担。
-
-- 区块链和加密资产具有高风险，使用本软件即表示您了解并愿意承担相关后果。
-- 我们不对资产损失、插件执行、链上失败、行情波动等行为承担法律责任。
-- 本软件以“现状”提供，不附带任何形式的明示或暗示保证。
-
+---
+title: 免责声明
+description: Tengu 的实验阶段、信息用途与责任边界。
 ---
 
-### English Version
+# 免责声明 / Disclaimer
 
-Tengu is an open-source, locally-run crypto asset management tool. We do not provide financial, investment, or legal advice. All consequences of using the Software are the sole responsibility of the user.
+## 中文
 
-- Blockchain and crypto assets carry significant risks. By using this software, you accept those risks.
-- We disclaim liability for losses due to plugin behavior, transaction failures, or market fluctuations.
-- The Software is provided “as is,” without any express or implied warranties.
+Tengu 是本地运行的加密资产桌面工具，当前文档以 Alpha 版本为基准。软件、截图和设计规划不保证某一功能已经完成，也不保证交易结果或投资收益。
 
-import BackToTopButton from '@theme/BackToTopButton';
+链上操作可能涉及手续费、参数错误、网络延迟、合约风险和不可逆结果。用户应核对账户、网络、签名内容与确认状态，并对所运行的第三方代码自行评估。
 
-<BackToTopButton />
+软件和文档不构成投资、财务或法律建议。数据、策略与模型输出不能替代独立核对。奖励和空投没有固定时间、金额或收益保证。
+
+软件按“现状”提供，保证与责任范围依适用许可和协议确定，并受适用法律及不可排除权利的限制。
+
+相关页面：[使用条款](/legal/terms)、[隐私政策](/legal/privacy)、[授权说明](/license/dual_license)。
+
+## English
+
+Tengu is a local crypto desktop tool. This documentation is based on an Alpha release. Screenshots and roadmap descriptions do not guarantee completed features, transaction outcomes, or investment returns.
+
+Blockchain operations may involve fees, incorrect parameters, network delays, contract risks, and irreversible results. Users should verify accounts, networks, signed contents, and confirmation status, and assess third-party code independently.
+
+The software and documentation are not financial, investment, or legal advice. Data, strategies, and model outputs require independent verification. Rewards and airdrops have no guaranteed timing, amount, or return.
+
+The software is provided as is. Warranty and liability follow the applicable license or agreement, subject to applicable law and mandatory rights.

@@ -1,61 +1,44 @@
-## 📜 最终用户许可协议（EULA）
+---
+title: 最终用户许可协议
+description: Tengu 的许可授予、使用边界、品牌、更新与终止说明。
+---
 
-### 中文版
+# 最终用户许可协议 / EULA
 
 **生效日期：2025 年 4 月 1 日**
 
-本最终用户许可协议（“协议”）是您（“用户”）与 Tengu 软件开发者（“我们”）之间关于使用本地桌面客户端软件 Tengu（“软件”）的法律协议。
+## 中文
 
-### 1. 许可授予
-- 免费用户可在 AGPLv3 开源许可下使用本软件，需保留版权声明并遵守协议条款。
-- 商业用途（闭源、集成、销售）需通过 NFT 商业授权或签署商业协议获得许可。
+本说明适用于 Tengu 桌面软件的许可使用。开源许可与实际取得的商业协议决定具体权利；存在差异时，应按所适用的许可和协议处理。
 
-### 2. 使用限制
-- 禁止反编译、破解、绕过授权系统或用于非法目的。
-- 未经授权不得复制、分发或出售本软件的全部或部分。
+### 许可授予
 
-### 3. 所有权声明
-- 本软件及相关知识产权归原作者所有。
-- 本协议不授予用户使用本软件名称、商标、界面设计的权利。
+开源版本按 AGPLv3 使用、修改和分发，包括符合许可条件的商业使用。需要额外闭源分发、集成或再授权权利时，按对应等级的商业协议取得许可。
 
-### 4. 自动更新
-- 软件可能在用户许可下进行自动更新，以改善功能与安全性。
+### 使用边界
 
-### 5. 终止
-- 若违反本协议，使用权将被立即终止，开发方有权采取相应法律行动。
+遵守适用许可，不冒用品牌、伪造授权凭证或以违法方式使用软件。商业授权的范围、验证和终止依协议约定。本说明不剥夺 AGPLv3 允许的研究、修改与分发权利。
 
-### 6. 法律适用
-- 本协议将依照国际通用合同法律原则进行解释与执行。若发生争议，各方应首先通过友好协商解决。
+### 所有权与第三方组件
 
----
+原作者保留其代码与品牌的适用权利。第三方组件保留各自许可；对 Tengu 的代码授权不自动包含商标、名称或第三方代码的额外授权。
 
-### English Version
+### 更新与终止
 
-**Effective Date: April 1, 2025**
+程序更新和数据迁移以相应版本说明为准，更新前应备份。授权的期限、违约处理与终止后义务依适用许可或商业协议确定，不以本页新增限制替代原条款。
 
-This End-User License Agreement (“Agreement”) is a legal contract between you (“User”) and the developers of Tengu (“We”) for use of the Tengu desktop software (“Software”).
+### 争议与联系
 
-### 1. License Grant
-- Free use is allowed under the AGPLv3 open-source license, with proper attribution and license compliance.
-- Commercial use (e.g., closed-source deployment, resale, integration) requires a valid NFT license or commercial agreement.
+商业许可的法律适用与争议解决见[商业条款](/license/commercial-zh)，开源版本以 AGPLv3 为准。联系：[tengu@to1.dev](mailto:tengu@to1.dev)。
 
-### 2. Restrictions
-- You may not reverse engineer, bypass licensing, or use the Software for unlawful purposes.
-- Redistribution or resale without authorization is strictly prohibited.
+## English
 
-### 3. Ownership
-- All rights and intellectual property remain with the original authors.
-- This agreement does not grant rights to use the Software’s name, branding, or visual design.
+This notice applies to licensed use of the Tengu desktop software. The applicable open-source license or commercial agreement determines specific rights.
 
-### 4. Updates
-- The Software may be updated automatically with user consent to enhance features and security.
+The open-source edition may be used, modified, and distributed under AGPLv3, including compliant commercial use. Additional proprietary distribution, integration, or sublicensing rights require the corresponding commercial agreement.
 
-### 5. Termination
-- Breach of this Agreement will result in immediate termination of usage rights and possible legal action.
+Comply with the applicable license, do not misuse branding or falsify license credentials, and do not use the software unlawfully. This notice does not remove research, modification, or distribution rights granted by AGPLv3.
 
-### 6. Governing Principles
-- This Agreement shall be interpreted and enforced based on internationally accepted principles of contract law. In case of dispute, the parties agree to prioritize amicable resolution.
+Original authors and third-party contributors retain their applicable rights. Code licensing does not automatically grant trademarks or additional rights to third-party components.
 
-import BackToTopButton from '@theme/BackToTopButton';
-
-<BackToTopButton />
+Back up data before updates. Terms, termination, remedies, and post-termination duties follow the relevant license or agreement. Commercial governing-law and dispute provisions are in the [commercial terms](/license/commercial). Contact [tengu@to1.dev](mailto:tengu@to1.dev).

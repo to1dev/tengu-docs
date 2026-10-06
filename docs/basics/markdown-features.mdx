@@ -1,152 +1,35 @@
 ---
 sidebar_position: 4
+title: 脚本与插件
+description: 了解扩展方向，以及加载第三方代码前应核对的内容。
 ---
 
-# Markdown Features
+# 脚本与插件
 
-Docusaurus supports **[Markdown](https://daringfireball.net/projects/markdown/syntax)** and a few **additional features**.
+Tengu 的扩展规划希望让用户通过 Lua、JavaScript 和原生模块组织数据、界面与操作流程。具体脚本 API、包格式、权限控制和热重载能力，应以对应版本的实现与开发文档为准。
 
-## Front Matter
+白皮书中的 `.tengu` 包结构和生命周期是设计说明，不是所有发行版都兼容的稳定接口。
 
-Markdown documents have metadata at the top called [Front Matter](https://jekyllrb.com/docs/front-matter/):
+## 规划中的扩展场景
 
-```text title="my-doc.md"
-// highlight-start
----
-id: my-doc-id
-title: My document title
-description: My document description
-slug: /my-custom-url
----
-// highlight-end
+- 整理公开行情或链上事件，生成个人观察列表。
+- 组合数据查询和本地分析，减少重复操作。
+- 为已有模块提供自定义界面和辅助工具。
+- 在测试环境中研究策略流程和执行条件。
 
-## Markdown heading
+自动交易、插件市场与权限沙箱需要单独验证。加载成功不代表代码已通过审核，也不代表交易逻辑正确。
 
-Markdown text with [links](./hello.md)
-```
+## 加载前核对
 
-## Links
+1. 阅读源码或从可信发布者取得代码，检查它会读取哪些文件和访问哪些网络。
+2. 核对适配版本、依赖、入口和卸载方式。
+3. 优先使用公开地址和测试数据，不向脚本暴露真实密钥。
+4. 验证取消任务、错误处理、日志输出和资源释放行为。
 
-Regular Markdown links are supported, using url paths or relative file paths.
+如果对应版本尚未实现权限隔离，应按运行本地程序的风险级别对待插件。停止界面任务不一定已经撤销外部服务中的操作，也不能撤销已确认的链上交易。
 
-```md
-Let's see how to [Create a page](/create-a-page).
-```
+## 参与扩展开发
 
-```md
-Let's see how to [Create a page](./create-a-page.md).
-```
+先查阅[源码构建与版本](../extras/manage-docs-versions.md)，在问题反馈中说明目标提交、操作系统和扩展用途。新增 API 应说明参数、返回值、错误行为和兼容范围。
 
-**Result:** Let's see how to [Create a page](./create-a-page.md).
-
-## Images
-
-Regular Markdown images are supported.
-
-You can use absolute paths to reference images in the static directory (`static/img/docusaurus.png`):
-
-```md
-![Docusaurus logo](/img/docusaurus.png)
-```
-
-![Docusaurus logo](/img/docusaurus.png)
-
-You can reference images relative to the current file as well. This is particularly useful to colocate images close to the Markdown files using them:
-
-```md
-![Docusaurus logo](./img/docusaurus.png)
-```
-
-## Code Blocks
-
-Markdown code blocks are supported with Syntax highlighting.
-
-````md
-```jsx title="src/components/HelloDocusaurus.js"
-function HelloDocusaurus() {
-  return <h1>Hello, Docusaurus!</h1>;
-}
-```
-````
-
-```jsx title="src/components/HelloDocusaurus.js"
-function HelloDocusaurus() {
-  return <h1>Hello, Docusaurus!</h1>;
-}
-```
-
-## Admonitions
-
-Docusaurus has a special syntax to create admonitions and callouts:
-
-```md
-:::tip My tip
-
-Use this awesome feature option
-
-:::
-
-:::danger Take care
-
-This action is dangerous
-
-:::
-```
-
-:::tip My tip
-
-Use this awesome feature option
-
-:::
-
-:::danger Take care
-
-This action is dangerous
-
-:::
-
-## MDX and React Components
-
-[MDX](https://mdxjs.com/) can make your documentation more **interactive** and allows using any **React components inside Markdown**:
-
-```jsx
-export const Highlight = ({children, color}) => (
-  <span
-    style={{
-      backgroundColor: color,
-      borderRadius: '20px',
-      color: '#fff',
-      padding: '10px',
-      cursor: 'pointer',
-    }}
-    onClick={() => {
-      alert(`You clicked the color ${color} with label ${children}`)
-    }}>
-    {children}
-  </span>
-);
-
-This is <Highlight color="#25c2a0">Docusaurus green</Highlight> !
-
-This is <Highlight color="#1877F2">Facebook blue</Highlight> !
-```
-
-export const Highlight = ({children, color}) => (
-  <span
-    style={{
-      backgroundColor: color,
-      borderRadius: '20px',
-      color: '#fff',
-      padding: '10px',
-      cursor: 'pointer',
-    }}
-    onClick={() => {
-      alert(`You clicked the color ${color} with label ${children}`);
-    }}>
-    {children}
-  </span>
-);
-
-This is <Highlight color="#25c2a0">Docusaurus green</Highlight> !
-
-This is <Highlight color="#1877F2">Facebook blue</Highlight> !
+完整设计背景见[白皮书](/whitepaper)。

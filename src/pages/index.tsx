@@ -1,82 +1,42 @@
-import type { ReactNode } from "react";
-import clsx from "clsx";
+import type {ReactNode} from "react";
 import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
-import BackToTopButton from "@theme/BackToTopButton";
-import Logo from "../../static/img/tengu.svg";
+import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Screenshots from "@site/src/components/Screenshots";
-import FAQs from "../components/FAQs";
-import CTA1 from "../components/CTA1";
-import CTA2 from "../components/CTA2";
-import CTA3 from "../components/CTA3";
-
+import FAQs from "@site/src/components/FAQs";
+import CTA3 from "@site/src/components/CTA3";
 import styles from "./index.module.css";
 
-function HomepageHeader() {
-    const { siteConfig } = useDocusaurusContext();
-    return (
-        <section style={{ overflow: "hidden", position: "relative" }}>
-            <header className={clsx("hero hero--primary", styles.heroBanner)}>
-                <div className="container">
-                    <Heading as="h1" className="hero__title">
-                        <div>
-                            <Logo className="w-16 h-16" />
-                        </div>
-                        {siteConfig.title}
-                    </Heading>
-                    <p className="hero__subtitle">{siteConfig.tagline}</p>
-                    <div className={styles.buttons}>
-                        <Link
-                            className="button button--secondary button--lg fancy-button"
-                            to="/docs/intro"
-                        >
-                            ⌛ 一分钟指南
-                        </Link>
-                    </div>
-                    <div className={styles.buttons}>
-                        <Link
-                            className="button button--danger button--lg fancy-button"
-                            to="/docs/quickstart"
-                        >
-                            💾 下载最新版
-                        </Link>
-                    </div>
-                </div>
-            </header>
-            <svg
-                className={styles.wave}
-                viewBox="0 0 1440 320"
-                preserveAspectRatio="none"
-            >
-                <path
-                    fill="#fff"
-                    d="M0,256L60,240C120,224,240,192,360,165.3C480,139,600,117,720,122.7C840,128,960,160,1080,160C1200,160,1320,128,1380,112L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-                ></path>
-            </svg>
-        </section>
-    );
-}
-
 export default function Home(): ReactNode {
-    const { siteConfig } = useDocusaurusContext();
-    return (
-        <Layout
-            title={`一站式加密桌面客户端`}
-            description="一款安全、直观、易用的桌面应用，让加密资产管理和交易变得轻而易举。"
-        >
-            <HomepageHeader />
-            <main>
-                <HomepageFeatures />
-                <CTA1 />
-                <Screenshots />
-                <CTA2 />
-                <FAQs />
-                <CTA3 />
-                <BackToTopButton />
-            </main>
-        </Layout>
-    );
+    const screenshot = useBaseUrl("/img/screenshots/s1.png");
+    return <Layout title="本地优先的加密桌面工作区" description="Tengu 以本地计算、原生桌面与开源共建为核心。了解 Alpha 版本、设计规划与授权方式。" wrapperClassName={styles.home}>
+        <main>
+        <section className={styles.hero} aria-labelledby="hero-title">
+            <div className={`container ${styles.heroGrid}`}>
+                <div className={styles.heroCopy}>
+                    <Link className={styles.release} to="/docs/quickstart"><span className={styles.releaseDot}/> 0.0.1 Alpha <span className={styles.releaseDivider}/> 探索早期版本 <span aria-hidden="true">↗</span></Link>
+                    <span className={styles.eyebrow}>YOUR DEVICE. YOUR WORKSPACE.</span>
+                    <Heading as="h1" id="hero-title" className={styles.heroTitle}>把掌控权，<br/>留在你的<span>桌面。</span></Heading>
+                    <p className={styles.heroDescription}>让钱包、链上数据与扩展工具，<br className={styles.desktopBreak}/>在自己的设备上拥有一个清晰的工作环境。</p>
+                    <div className={styles.heroActions}><Link className="button button--primary button--lg" to="/docs/intro">认识 Tengu <span aria-hidden="true">↗</span></Link><Link className={styles.textLink} to="/docs/quickstart">下载与安装 <span aria-hidden="true">↓</span></Link></div>
+                    <div className={styles.heroMeta}><span>C++ / Qt</span><span>LOCAL FIRST</span><span>OPEN SOURCE</span></div>
+                </div>
+                <div className={styles.visual}>
+                    <div className={styles.visualGrid}/>
+                    <div className={styles.preview}>
+                        <div className={styles.previewBar}><span className={styles.windowDots}><i/><i/><i/></span><span>Tengu · Desktop</span><span className={styles.previewBadge}>ALPHA</span></div>
+                        <div className={styles.previewImage}><img src={screenshot} alt="Tengu Alpha 早期桌面界面截图" width="512" height="512" fetchPriority="high" decoding="async"/></div>
+                        <div className={styles.previewFooter}><span className={styles.statusDot}/><span>本地工作区 / 早期界面预览</span><span aria-hidden="true">↗</span></div>
+                    </div>
+                    <div className={styles.floatingNote}><span className={styles.noteIcon} aria-hidden="true">⌘</span><div><strong>从自己的设备出发</strong><span>Built for your desktop</span></div></div>
+                    <span className={styles.visualLabel}>01 — A LOCAL PERSPECTIVE</span>
+                </div>
+            </div>
+            <div className={`container ${styles.principles}`}>{[["01","本地优先","把数据和工作环境放在手边"],["02","原生桌面","为连续、专注的操作而设计"],["03","开源共建","让理解、研究与改进有据可循"]].map(([number,title,description]) => <div className={styles.principle} key={number}><span>{number}</span><div><strong>{title}</strong><p>{description}</p></div></div>)}</div>
+        </section>
+        <HomepageFeatures/><Screenshots/><FAQs/><CTA3/>
+        </main>
+    </Layout>;
 }

@@ -1,0 +1,8 @@
+local-first:
+  label: 本地优先
+  permalink: /local-first
+  description: 关于本地计算、数据自主与个人工作环境的思考。
+behind-tengu:
+  label: 项目幕后
+  permalink: /behind-tengu
+  description: Tengu 的起点、设计选择与开发思路。

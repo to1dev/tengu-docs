@@ -1,88 +1,39 @@
 ---
 sidebar_position: 2
+title: 参与项目与文档贡献
+description: 为 Tengu 提交问题、改进文档和提供翻译。
 ---
 
-# Translate your site
+# 参与项目与文档贡献
 
-Let's translate `docs/intro.md` to French.
+你可以通过复现问题、验证说明、改进文档或提交代码参与 Tengu。准确的使用反馈和可验证的说明，同样是项目的重要贡献。
 
-## Configure i18n
+## 从小改动开始
 
-Modify `docusaurus.config.js` to add support for the `fr` locale:
+- 修正错字、失效链接和步骤遗漏。
+- 说明某个功能在哪个版本可用。
+- 补充安装、恢复或网络问题的最小复现。
+- 解释界面中的术语，保持不同页面口径一致。
 
-```js title="docusaurus.config.js"
-export default {
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'fr'],
-  },
-};
-```
+提交时写清触发场景、修改后的行为与验证方法。功能规划、授权权益和交付时间应有依据，避免在润色中新增承诺。
 
-## Translate a doc
+## 内容位置
 
-Copy the `docs/intro.md` file to the `i18n/fr` folder:
+| 内容 | 目录 |
+| --- | --- |
+| 使用与开发指南 | `docs/` |
+| 首页与 FAQ | `src/components/`、`src/pages/index.tsx` |
+| 白皮书、授权与法律页面 | `src/pages/` |
+| 作者文章 | `blog/` |
 
-```bash
-mkdir -p i18n/fr/docusaurus-plugin-content-docs/current/
+## 翻译
 
-cp docs/intro.md i18n/fr/docusaurus-plugin-content-docs/current/intro.md
-```
+本站默认语言是简体中文。英文路径当前允许回退到原文，不表示所有页面已经完成英文翻译。双语法律页面应保持含义一致，避免只修改一侧的金额、期限或授权条件。
 
-Translate `i18n/fr/docusaurus-plugin-content-docs/current/intro.md` in French.
+新增译文时按 Docusaurus locale 目录组织内容，保留文档 ID 和链接关系。运行全部 locale 的构建，检查标题、导航、图片和页面内链接。
 
-## Start your localized site
+## 提交前检查
 
-Start your site on the French locale:
+运行 `bun run check`，并在浏览器中查看桌面与移动页面。使用真实、脱敏的示例，不提交密钥、助记词、API Key、个人数据或生成目录。
 
-```bash
-npm run start -- --locale fr
-```
-
-Your localized site is accessible at [http://localhost:3000/fr/](http://localhost:3000/fr/) and the `Getting Started` page is translated.
-
-:::caution
-
-In development, you can only use one locale at a time.
-
-:::
-
-## Add a Locale Dropdown
-
-To navigate seamlessly across languages, add a locale dropdown.
-
-Modify the `docusaurus.config.js` file:
-
-```js title="docusaurus.config.js"
-export default {
-  themeConfig: {
-    navbar: {
-      items: [
-        // highlight-start
-        {
-          type: 'localeDropdown',
-        },
-        // highlight-end
-      ],
-    },
-  },
-};
-```
-
-The locale dropdown now appears in your navbar:
-
-![Locale Dropdown](./img/localeDropdown.png)
-
-## Build your localized site
-
-Build your site for a specific locale:
-
-```bash
-npm run build -- --locale fr
-```
-
-Or build your site to include all the locales at once:
-
-```bash
-npm run build
-```
+联系方式见[项目与联系](/markdown-page)。

@@ -1,23 +1,40 @@
 ---
 sidebar_position: 6
+title: 故障排查与反馈
+description: 排查启动、恢复、节点连接和交易状态问题，提交可复现的反馈。
 ---
 
-# Congratulations!
+# 故障排查与反馈
 
-You have just learned the **basics of Docusaurus** and made some changes to the **initial template**.
+先记录程序版本、系统版本和问题出现前的操作。升级、重装或删除本地数据之前，完成[备份](./deploy-your-site.md)。
 
-Docusaurus has **much more to offer**!
+## 常见问题
 
-Have **5 more minutes**? Take a look at **[versioning](../extras/manage-docs-versions.md)** and **[i18n](../extras/translate-your-site.md)**.
+| 现象 | 优先检查 |
+| --- | --- |
+| Windows 程序无法启动 | 是否完整解压、平台是否为 x64、文件校验是否通过、系统提示的缺失依赖 |
+| 钱包导入后地址不同 | 网络、派生路径、账户索引和额外助记词口令 |
+| 余额或行情没有更新 | 节点连接、认证信息、限流、缓存和确认级别 |
+| 提交交易后超时 | 先查询交易哈希，确认状态后再决定是否重试 |
+| 升级后配置异常 | 对应版本的迁移说明、数据位置与恢复方式 |
+| 插件无法加载 | 支持的 API、依赖、入口及适配提交 |
 
-Anything **unclear** or **buggy** in this tutorial? [Please report it!](https://github.com/facebook/docusaurus/discussions/4610)
+核对启动提示、文件来源和签名，无法判断时联系项目维护者。
 
-## What's next?
+## 提交反馈
 
-- Read the [official documentation](https://docusaurus.io/)
-- Modify your site configuration with [`docusaurus.config.js`](https://docusaurus.io/docs/api/docusaurus-config)
-- Add navbar and footer items with [`themeConfig`](https://docusaurus.io/docs/api/themes/configuration)
-- Add a custom [Design and Layout](https://docusaurus.io/docs/styling-layout)
-- Add a [search bar](https://docusaurus.io/docs/search)
-- Find inspirations in the [Docusaurus showcase](https://docusaurus.io/showcase)
-- Get involved in the [Docusaurus Community](https://docusaurus.io/community/support)
+通过[项目 Issue](https://github.com/to1dev/tengu/issues)或 [tengu@to1.dev](mailto:tengu@to1.dev)提供：
+
+```text
+程序版本或 Git 提交：
+操作系统与架构：
+复现步骤：
+预期结果：
+实际结果与错误文本：
+网络/节点类型（如相关）：
+已尝试的排查方法：
+```
+
+日志和截图应脱敏。维护者不需要你的私钥、助记词或钱包密码；如果问题只在某一账户出现，优先提供公开交易哈希或最小测试样例。
+
+涉嫌安全问题时请使用邮箱联系，避免在公开 Issue 中直接发布敏感信息。

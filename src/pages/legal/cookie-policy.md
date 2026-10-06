@@ -1,79 +1,43 @@
-## 🍪 Cookie 政策（中文）
+---
+title: Cookie 与浏览器存储
+description: 当前文档站的字体、统计脚本和浏览器存储说明。
+---
+
+# Cookie 与浏览器存储 / Cookie Policy
 
 **生效日期：2025 年 4 月 1 日**
 
-Tengu 是一款本地桌面加密软件，我们尊重您的隐私，并尽量减少对 Cookie 或任何用户行为追踪技术的使用。本政策旨在说明我们在网站与软件中使用 Cookie 的情况。
+## 中文
 
----
+本政策区分 Tengu 文档站与桌面客户端。网站使用浏览器机制展示内容，不能把网站的存储行为直接等同于桌面程序的数据处理。
 
-### 1. Tengu 软件本身不会使用 Cookie
+### 当前文档站
 
-- Tengu 桌面客户端在本地运行，不使用任何形式的 Cookie、第三方分析脚本或追踪技术。
-- 所有数据处理与交互均在本地完成，不涉及用户行为收集或用户画像分析。
-- 软件不通过网页界面进行任何用户身份认证或行为分析，因此不会设置或存储 Cookie。
+- 不集成 Google Analytics、广告像素或其他第三方行为统计脚本。
+- 完整文楷字体由本站托管，不向 Google Fonts 或 Adobe Fonts 发起字体请求。
+- 主题偏好等界面状态可能使用浏览器本地存储。Local Storage 与 Cookie 是不同机制。
+- 打开 GitHub、社区或其他外部链接后，目标网站适用其自身的 Cookie 与隐私政策。
 
----
+静态托管服务可能通过自己的配置设置 Cookie 或记录访问日志，应以实际线上响应和服务方说明为准。
 
-### 2. 官网可能使用基础 Cookie（仅限浏览器）
+### 桌面客户端
 
-- 我们的官方网站（如 [https://tengu.to1.dev](https://tengu.to1.dev)）可能会使用必要的 Cookie，以保证网站的正常功能（如语言切换、主题选择）。
-- 我们不使用 Google Analytics、Facebook Pixel 或其他第三方追踪脚本。
-- 我们不会在未征得用户同意的情况下存储任何可识别身份的 Cookie。
+本网站的 Cookie 与本地存储不控制桌面客户端。客户端的本地数据、节点连接、插件与第三方服务行为请阅读[隐私政策](/legal/privacy)，并以安装版本为准。
 
----
+### 你的选择
 
-### 3. 用户选择权
+可以通过浏览器设置清除本站 Cookie、Local Storage 和缓存。清除界面偏好可能恢复默认主题；清除缓存后，字体和静态资源需要重新下载。这不删除桌面客户端中的钱包或配置。
 
-- 您可以通过浏览器设置自行清除或禁用 Cookie。
-- 禁用 Cookie 可能会影响网站的部分功能（如暗黑模式或语言记忆），但不会影响 Tengu 软件本体的使用。
+联系：[tengu@to1.dev](mailto:tengu@to1.dev)。
 
----
+## English
 
-### 4. 政策更新
+This policy distinguishes the documentation website from the Tengu desktop client.
 
-我们保留随时更新本 Cookie 政策的权利。任何更新将在本站发布，并立即生效。
+The current website includes no Google Analytics, advertising pixels, or third-party behavioral analytics. Fonts are self-hosted, with no font requests to Google Fonts or Adobe Fonts. Interface preferences may use browser local storage, which is distinct from cookies.
 
-如您对 Cookie 使用有任何疑问，请联系：**tengu@to1.dev**
+External websites apply their own policies. Hosting infrastructure may set cookies or process access logs depending on the deployment.
 
----
+You can clear site cookies, local storage, and cached resources in your browser. Preferences may return to defaults and fonts may need to download again. This does not delete desktop wallet data or configuration.
 
-## 🍪 Cookie Policy (English)
-
-**Effective Date: April 1, 2025**
-
-Tengu is a local desktop application. We respect your privacy and aim to minimize or eliminate any use of cookies or user-tracking technologies. This policy explains how we handle cookies in both our app and website.
-
----
-
-### 1. No Cookies in the Tengu App
-
-- The Tengu desktop client runs entirely offline and does **not** use any cookies, tracking scripts, or analytics tools.
-- All processing is done locally. No behavioral data, identifiers, or user activity is collected or stored.
-- Since there is no browser-based login or web interaction within the app, no cookies are ever set.
-
----
-
-### 2. Minimal Cookies on the Website
-
-- Our official website (e.g., https://tengu.to1.dev) may use basic cookies strictly necessary for functionality (e.g., language, theme).
-- We do **not** use Google Analytics, Facebook Pixel, or any third-party tracking or marketing services.
-- We do not store any personally identifiable cookies without your explicit consent.
-
----
-
-### 3. Your Control
-
-- You can clear or disable cookies via your browser settings at any time.
-- Disabling cookies may affect some web features (like dark mode or language preference), but does not affect the Tengu desktop app.
-
----
-
-### 4. Changes to This Policy
-
-We reserve the right to update this Cookie Policy at any time. Changes will be posted here and become effective immediately.
-
-If you have any questions about our cookie use, please contact: **tengu@to1.dev**
-
-import BackToTopButton from '@theme/BackToTopButton';
-
-<BackToTopButton />
+See the [Privacy Policy](/legal/privacy) for client data and network boundaries. Contact [tengu@to1.dev](mailto:tengu@to1.dev) with questions.

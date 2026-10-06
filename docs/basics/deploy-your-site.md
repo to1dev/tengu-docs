@@ -1,31 +1,31 @@
 ---
 sidebar_position: 5
+title: 隐私与数据备份
+description: 为钱包、配置和本地数据建立可验证的备份与恢复流程。
 ---
 
-# Deploy your site
+# 隐私与数据备份
 
-Docusaurus is a **static-site-generator** (also called **[Jamstack](https://jamstack.org/)**).
+本地运行让你直接管理数据，也意味着你需要负责备份和恢复。加密保护无法替代备份；丢失恢复资料时，开发者通常无法代你恢复密钥。
 
-It builds your site as simple **static HTML, JavaScript and CSS files**.
+## 建立备份
 
-## Build your site
+1. 确认当前版本的钱包存储方式和配置位置。
+2. 退出程序，再复制需要备份的数据，避免复制尚未写入完成的文件。
+3. 单独备份助记词、额外口令、派生路径和账户索引。
+4. 将恢复资料保存在与日常设备分离的位置。
+5. 使用独立测试环境验证恢复结果，并核对公开地址。
 
-Build your site **for production**:
+部分加密数据可能与系统凭据或设备绑定，复制文件不一定能在另一台电脑解密。升级系统、更换设备或重装前，先核对可用恢复方式。
 
-```bash
-npm run build
-```
+## 日志与问题反馈
 
-The static files are generated in the `build` folder.
+发送截图和日志前，检查钱包地址、余额、文件路径、节点凭据与个人信息是否需要隐藏。私钥、助记词和钱包密码不应进入反馈材料。
 
-## Deploy your site
+## 网络与第三方服务
 
-Test your production build locally:
+查询节点、行情接口、云端模型和第三方插件具有各自的数据处理方式。公开地址不是私钥，但与 IP、查询时间或账户备注结合后，仍可能透露使用行为。
 
-```bash
-npm run serve
-```
+选择服务前阅读对应隐私政策。仅在需要时发送必要信息，尤其不要将恢复资料输入云端 AI、在线翻译或陌生网站。
 
-The `build` folder is now served at [http://localhost:3000/](http://localhost:3000/).
-
-You can now deploy the `build` folder **almost anywhere** easily, **for free** or very small cost (read the **[Deployment Guide](https://docusaurus.io/docs/deployment)**).
+官网使用完整本地字体，不访问 Google Fonts 或 Adobe Fonts。数据边界分别见[隐私政策](/legal/privacy)和[Cookie 政策](/legal/cookie-policy)。

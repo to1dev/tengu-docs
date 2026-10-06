@@ -1,12 +1,13 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
+import font from "./src/fonts.json";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
     title: "Tengu",
-    tagline: "一站式加密桌面客户端",
+    tagline: "本地优先的加密桌面工作区",
     favicon: "img/tengu.svg",
 
     // Set the production url of your site here
@@ -15,13 +16,33 @@ const config: Config = {
     // For GitHub pages deployment, it is often '/<projectName>/'
     baseUrl: "/",
 
+    future: { faster: true, v4: { removeLegacyPostBuildHeadAttribute: true } },
+    headTags: [
+        {
+            tagName: "style",
+            attributes: { id: "tengu-font-face" },
+            innerHTML: `@font-face{font-family:"LXGW WenKai Screen";src:url("/fonts/${font.filename}") format("woff2");font-style:normal;font-weight:400;font-display:swap}`,
+        },
+        {
+            tagName: "link",
+            attributes: {
+                rel: "preload",
+                href: `/fonts/${font.filename}`,
+                as: "font",
+                type: "font/woff2",
+                crossorigin: "anonymous",
+            },
+        },
+    ],
+
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
     organizationName: "to1dev", // Usually your GitHub org/user name.
     projectName: "tengu", // Usually your repo name.
 
     onBrokenLinks: "throw",
-    onBrokenMarkdownLinks: "warn",
+    onBrokenAnchors: "throw",
+    markdown: { hooks: { onBrokenMarkdownLinks: "throw" } },
 
     // Even if you don't use internationalization, you can use this field to set
     // useful metadata like html lang. For example, if your site is Chinese, you
@@ -61,14 +82,14 @@ const config: Config = {
         image: "img/card.png",
         colorMode: {
             defaultMode: "light",
-            disableSwitch: true,
+            disableSwitch: false,
             respectPrefersColorScheme: false,
         },
         navbar: {
             title: "Tengu",
             logo: {
                 alt: "Tengu Logo",
-                src: "img/logo.svg",
+                src: "img/tengu.svg",
             },
             items: [
                 {
@@ -78,8 +99,10 @@ const config: Config = {
                     label: "文档",
                 },
                 { to: "/blog", label: "博客", position: "left" },
+                { to: "/whitepaper", label: "白皮书", position: "left" },
+                { to: "/license/dual_license", label: "授权", position: "left" },
                 {
-                    href: "https://x.com/tengu_ai",
+                    href: "https://x.com/to1dev",
                     className: "header-x-link",
                     position: "right",
                     "aria-label": "X",
@@ -104,8 +127,9 @@ const config: Config = {
                         },
                         {
                             label: "下载与安装",
-                            to: "/docs/intro",
+                            to: "/docs/quickstart",
                         },
+                        { label: "项目与联系", to: "/markdown-page" },
                     ],
                 },
                 {
@@ -113,7 +137,7 @@ const config: Config = {
                     items: [
                         {
                             label: "X",
-                            href: "https://x.com/tengu_ai",
+                            href: "https://x.com/to1dev",
                         },
                         {
                             label: "Discord",
@@ -138,11 +162,11 @@ const config: Config = {
                         },
                         {
                             label: "许可证",
-                            href: "/license/dual_license",
+                            to: "/license/dual_license",
                         },
                         {
                             label: "白皮书",
-                            href: "/whitepaper",
+                            to: "/whitepaper",
                         },
                     ],
                 },
@@ -155,28 +179,28 @@ const config: Config = {
                         },
                         {
                             label: "条款",
-                            href: "/legal/terms",
+                            to: "/legal/terms",
                         },
                         {
                             label: "最终用户许可协议",
-                            href: "/legal/eula",
+                            to: "/legal/eula",
                         },
                         {
                             label: "免责声明",
-                            href: "/legal/disclaimer",
+                            to: "/legal/disclaimer",
                         },
                         {
                             label: "退款政策",
-                            href: "/legal/refund-policy",
+                            to: "/legal/refund-policy",
                         },
                         {
                             label: "Cookie Policy",
-                            href: "/legal/cookie-policy",
+                            to: "/legal/cookie-policy",
                         },
                     ],
                 },
             ],
-            copyright: `&copy; ${new Date().getFullYear()} Tengu. 软件基于 <a href="/license/agplv3">AGPLv3</a> 与 <a href="/license/dual_license">商业许可证</a> 双授权, 由 <a href="https://x.com/to1dev" target="_blank">@to1dev</a> 精心打造`,
+            copyright: `&copy; ${new Date().getFullYear()} Tengu · Local first, thoughtfully built. <a href="/license/agplv3">AGPLv3</a> / <a href="/license/dual_license">商业许可</a> · <a href="https://x.com/to1dev" target="_blank" rel="noopener noreferrer">@to1dev</a>`,
         },
         prism: {
             theme: prismThemes.dracula,

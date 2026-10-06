@@ -1,139 +1,28 @@
-import type { ReactNode } from "react";
-import clsx from "clsx";
+import type {ReactNode} from "react";
+import Link from "@docusaurus/Link";
 import Heading from "@theme/Heading";
-import styles from "./styles.module.css";
+import styles from "../Landing/styles.module.css";
 
-type FeatureItem = {
-    title: string;
-    Svg?: React.ComponentType<React.ComponentProps<"svg">>;
-    image?: string;
-    description: ReactNode;
-};
-
-const FeatureList: FeatureItem[] = [
-    {
-        title: "多链资产一站管理",
-        image: require("@site/static/img/cryptocurrency.png").default,
-        description: (
-            <>
-                支持比特币、以太坊、Solana、Sui等主流公链，统一创建与导入钱包，轻松查看余额与交易，全面掌控多链资产。
-            </>
-        ),
-    },
-    {
-        title: "安全与隐私保护",
-        image: require("@site/static/img/hacker.png").default,
-        description: (
-            <>
-                私钥本地保存，助记词遵循 BIP32 / BIP39 标准，敏感数据通过
-                XSalsa20/Poly1305 加密处理，确保资产不上传、不泄露、不中断。
-            </>
-        ),
-    },
-    {
-        title: "实时链上监控系统",
-        image: require("@site/static/img/asset.png").default,
-        description: (
-            <>
-                基于本地的 gRPC 和 WebSocket
-                高速监听，实时追踪地址变动、交易记录与合约交互，快速获取链上动态提醒。
-            </>
-        ),
-    },
-    {
-        title: "高性能跨平台体验",
-        image: require("@site/static/img/streamer.png").default,
-        description: (
-            <>
-                采用 C++20 与 Qt 框架打造，界面流畅、响应迅速，适配 Windows 与
-                Linux，专为重度用户设计的桌面体验。
-            </>
-        ),
-    },
-    {
-        title: "自定义脚本与插件支持",
-        image: require("@site/static/img/one-of-a-kind.png").default,
-        description: (
-            <>
-                内置 JavaScript 与 Lua
-                引擎，支持用户自定义功能与自动化脚本，兼容插件生态，灵活扩展未来更多强大功能与可能。
-            </>
-        ),
-    },
-    {
-        title: "开源透明、社区共建",
-        image: require("@site/static/img/virtual-event.png").default,
-        description: (
-            <>
-                所有代码遵循 AGPLv3
-                协议，源代码公开透明，支持社区协作开发，致力打造真正由用户驱动的开源项目。
-            </>
-        ),
-    },
-    {
-        title: "NFT 授权与激励体系",
-        Svg: require("@site/static/img/tokens.svg").default,
-        description: (
-            <>
-                购买 NFT 即可获得商业授权与功能优先访问资格，持有者还可获得
-                TENGU 代币奖励与生态治理参与机会。
-            </>
-        ),
-    },
-    {
-        title: "持续更新与智能未来",
-        image: require("@site/static/img/industrial.png").default,
-        description: (
-            <>
-                集成 AI 智能交易分析、跨链桥接与 DeFi
-                聚合交易，持续迭代升级，迈向下一代本地化加密资产平台。
-            </>
-        ),
-    },
+const features = [
+    {title: "数据，留在自己的设备", description: "以本地管理为核心组织钱包与配置。你决定保存什么、备份什么，以及何时连接外部服务。", path: "M12 3 3 7v5c0 5 9 9 9 9s9-4 9-9V7l-9-4ZM9 12l2 2 4-4"},
+    {title: "为桌面工作而设计", description: "以 C++ / Qt 构建原生工作环境。把常用操作放到手边，让复杂任务拥有清晰的入口。", path: "M3 4h18v13H3V4ZM8 21h8M12 17v4"},
+    {title: "让代码与边界可见", description: "在 AGPLv3 下研究、修改和使用开源版本。功能是否可用，以实际版本和发布说明为准。", path: "m8 7-5 5 5 5m8-10 5 5-5 5m-3-13-2 16"},
+    {title: "连接不同的链上世界", description: "多链钱包与数据接口是持续演进的方向。统一工作环境，同时保留各网络的差异和连接选择。", path: "M7 5a2 2 0 1 0-4 0 2 2 0 0 0 4 0Zm14 0a2 2 0 1 0-4 0 2 2 0 0 0 4 0ZM14 19a2 2 0 1 0-4 0 2 2 0 0 0 4 0ZM5 7v5h14V7m-7 5v5"},
+    {title: "把重复工作变成流程", description: "规划通过脚本与插件组合查询、分析和操作。扩展接口逐步完善，先从可验证的小任务开始。", path: "m5 5 5 7-5 7m8 0h6M3 3h18v18H3V3Z"},
+    {title: "给理解留出空间", description: "行情、资讯和 AI 辅助分析属于后续规划。目标是帮助理解信息与操作依据，让决策过程更透明。", path: "M4 19V5m0 14h16M8 15l4-5 4 2 5-7"},
 ];
 
-function Feature({ title, Svg, image, description }: FeatureItem) {
-    return (
-        <div className={clsx("col col--4")}>
-            <div className="text--center">
-                {Svg ? (
-                    <Svg className={styles.featureSvg} role="img" />
-                ) : image ? (
-                    <img
-                        src={image}
-                        className={styles.featureImg}
-                        alt={title}
-                    />
-                ) : null}
-            </div>
-            <div className="text--center padding-horiz--md">
-                <Heading as="h3">{title}</Heading>
-                <p>{description}</p>
-            </div>
-        </div>
-    );
-}
-
 export default function HomepageFeatures(): ReactNode {
-    return (
-        <section className={styles.features}>
-            <div className="container">
-                <div className="row">
-                    {FeatureList.map((props, idx) => (
-                        <Feature key={idx} {...props} />
-                    ))}
-                </div>
+    return <section className={styles.section} aria-labelledby="features-title">
+        <div className="container">
+            <div className={styles.sectionHeading}>
+                <div><span className={styles.eyebrow}>Built around your device</span><Heading as="h2" id="features-title" className={styles.title}>从自己的设备出发。</Heading><p className={styles.lede}>本地优先、原生桌面、可扩展工作流。<br/>用清晰的设计，承接复杂的链上世界。</p></div>
+                <Link className={styles.sectionLink} to="/whitepaper">了解设计方向 <span aria-hidden="true">↗</span></Link>
             </div>
-            <svg
-                className={styles.wave}
-                viewBox="0 0 1440 320"
-                preserveAspectRatio="none"
-            >
-                <path
-                    fill="#8BE9FD"
-                    d="M0,256L60,240C120,224,240,192,360,165.3C480,139,600,117,720,122.7C840,128,960,160,1080,160C1200,160,1320,128,1380,112L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-                ></path>
-            </svg>
-        </section>
-    );
+            <div className={styles.grid}>{features.map((feature, index) => <article className={styles.card} key={feature.title}>
+                <div className={styles.cardTop}><span className={styles.icon}><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={feature.path}/></svg></span><span className={styles.number}>{String(index + 1).padStart(2, "0")} / {index < 3 ? "PRINCIPLE" : "ROADMAP"}</span></div>
+                <Heading as="h3" className={styles.cardTitle}>{feature.title}</Heading><p className={styles.cardDesc}>{feature.description}</p>
+            </article>)}</div>
+        </div>
+    </section>;
 }

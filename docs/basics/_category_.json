@@ -1,8 +1,8 @@
 {
-  "label": "基础",
+  "label": "使用与安全",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "5 minutes to learn the most important Docusaurus concepts."
+    "description": "了解账户、网络、签名、扩展与本地数据管理。功能入口以安装版本为准。"
   }
 }

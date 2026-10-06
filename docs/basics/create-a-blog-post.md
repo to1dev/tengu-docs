@@ -1,34 +1,34 @@
 ---
 sidebar_position: 3
+title: 交易与签名
+description: 理解交易构造、签名、广播和确认的区别。
 ---
 
-# Create a Blog Post
+# 交易与签名
 
-Docusaurus creates a **page for each blog post**, but also a **blog index page**, a **tag system**, an **RSS** feed...
+交易通常经历四个阶段：构造、签名、广播和确认。“已签名”只表示生成了签名，不等于资金已经转移；“已提交”也不等于网络最终确认。
 
-## Create your first Post
+本页解释操作流程。具体链种、交易类型和界面入口，以安装版本实际提供的功能为准。
 
-Create a file at `blog/2021-02-28-greetings.md`:
+## 签名前核对
 
-```md title="blog/2021-02-28-greetings.md"
----
-slug: greetings
-title: Greetings!
-authors:
-  - name: Joel Marcey
-    title: Co-creator of Docusaurus 1
-    url: https://github.com/JoelMarcey
-    image_url: https://github.com/JoelMarcey.png
-  - name: Sébastien Lorber
-    title: Docusaurus maintainer
-    url: https://sebastienlorber.com
-    image_url: https://github.com/slorber.png
-tags: [greetings]
----
+- 网络和账户是否正确，是否误用了测试网或其他链的地址。
+- 收款地址、代币合约、金额和精度是否符合预期。
+- 预计手续费、滑点、有效期及授权范围是否可接受。
+- 调用的是转账、合约操作还是代币授权，实际效果是否与界面说明一致。
 
-Congratulations, you have made your first post!
+无限额度授权与单次转账具有不同后果。不要把未知脚本生成的签名请求视为普通登录。
 
-Feel free to play around and edit this post as much as you like.
-```
+## 本地签名与广播
 
-A new blog post is now available at [http://localhost:3000/blog/greetings](http://localhost:3000/blog/greetings).
+设计上，私钥应留在本地，客户端生成签名后提交已签名交易。节点不需要你的私钥，但可能需要账户地址、余额、nonce 或近期区块信息等参数。
+
+离线签名需要提前准备相应数据，并考虑交易参数的有效期。完成签名后，仍需通过可用网络广播。
+
+## 提交失败时
+
+先使用交易哈希查询状态，再决定是否重试。节点超时不代表交易未进入网络；重复提交或重新构造交易可能造成重复执行。
+
+失败的交易也可能产生手续费。诊断时记录交易哈希、网络、错误文本和提交时间，避免发送原始密钥或完整敏感日志。
+
+相关文档：[链上数据与网络](./create-a-document.md)、[故障排查](./congratulations.md)。

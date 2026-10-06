@@ -1,16 +1,18 @@
+---
+title: Commercial License Terms
+description: Tengu commercial rights, tier pricing, credentials, and agreement conditions.
+---
+
 # Tengu Dual Licensing Agreement – Commercial License Terms
 **Version 1.6 – Effective March 1, 2025**
 
-This document outlines the terms for the Commercial License of Tengu. The free version remains available under the GNU Affero General Public License v3.0 (AGPLv3) as detailed in [LICENSE](/license/agplv3). By purchasing a commercial license via SOL payment, Tengu Token (TENGU), or holding a Tengu NFT, you agree to be bound by the terms below. NFT holders receive Tier 2 rights and may earn TENGU rewards, including potential airdrops. For inquiries or to purchase a license or NFT, contact us at [tengu@to1.dev].
+This document outlines the terms for the Commercial License of Tengu. The free version remains available under the GNU Affero General Public License v3.0 (AGPLv3) as detailed in [LICENSE](/license/agplv3). By purchasing a commercial license via SOL payment, Tengu Token (TENGU), or holding a Tengu NFT, you agree to be bound by the terms below. NFT holders receive Tier 2 rights and may earn TENGU rewards, including potential airdrops. For inquiries or to purchase a license or NFT, contact us at [tengu@to1.dev](mailto:tengu@to1.dev).
 
 ---
 
-## **Tengu Dual Licensing Agreement – Commercial License Terms**
-**Version 1.6 – Effective March 1, 2025**
-
 ### **1. Definitions**
 1.1. **“Software”**
-Refers to **Tengu**, including all source code, binaries, modules, documentation, and other related materials provided by the authors.
+Refers to **Tengu**, including the source code, binaries, modules, documentation, and related materials covered by this grant. Third-party components retain their own licenses.
 
 1.2. **“AGPL License”**
 Refers to the GNU Affero General Public License version 3.0 (AGPL-3.0), under which the free version of Tengu is distributed.
@@ -28,7 +30,7 @@ Refers to the level of commercial rights purchased or granted, as detailed in Se
 Refers to the cryptocurrency Solana (SOL), used as a payment option for commercial licensing fees. Fees are denominated in SOL, with conversions based on **CoinMarketCap** rates on the payment date (or the previous trading day if unavailable).
 
 1.7. **“Tengu Token (TENGU)”**
-Refers to the SPL Token issued by the authors on the Solana blockchain, used for payments, rewards, and ecosystem incentives.
+Refers to the proposed Solana SPL token for eligible payments and incentives, if issued and available under separate announcements.
 
 1.8. **“Commercial Use”**
 Refers to any use of Tengu for profit-generating purposes, including but not limited to integrating into proprietary products, providing services (e.g., SaaS), or distributing for revenue.
@@ -48,20 +50,20 @@ Refers to an individual or entity holding a valid Tengu NFT, issued or recognize
 2.1. **Tier 1 – Free (AGPL):**
 - Tengu is available free of charge solely under the AGPL-3.0. Non-paying users do not receive the commercial rights granted in this agreement.
 
-2.2. **Tier 2 – 1 SOL or NFT Ownership:**INITIAL-DRAFT
+2.2. **Tier 2 – 1 SOL or NFT Ownership:**
 - The Licensee may obtain Tier 2 rights by:
   - Paying 1 SOL; or
   - Holding a valid Tengu NFT (1 NFT = 1 Tier 2 license).
 - Rights are described in Section 3.2. NFT Holders may earn TENGU rewards, including potential airdrops, per Section 2.7.
-- Only 1,000 NFT.
+- Planned allocation: 1,000 NFTs, subject to the actual issuance announcement.
 
 2.3. **Tier 3 – 5 SOL or Equivalent TENGU:**
 - Upon payment of 5 SOL or equivalent TENGU (market rate), the Licensee is granted the rights in Section 3.3. NFT Holders upgrading pay 4 SOL or equivalent TENGU.
-- Only 100 NFT.
+- Planned allocation: 100 NFTs, subject to the actual issuance announcement.
 
 2.4. **Tier 4 – 50 SOL or Equivalent TENGU:**
-- Upon payment of 50 SOL or equivalent TENGU (market rate), the Licensee is granted the rights in Section 3.4. NFT Holders upgrading pay 29 SOL or equivalent TENGU.
-- Only 10 NFT.
+- Upon payment of 50 SOL or equivalent TENGU (market rate), the Licensee is granted the rights in Section 3.4. NFT Holders upgrading pay 49 SOL or equivalent TENGU.
+- Planned allocation: 10 NFTs, subject to the actual issuance announcement.
 
 2.5. **Tier Adjustments:**
 - **Upgrades:** The Licensee may upgrade by paying the difference between tiers in SOL or TENGU (1 SOL/TENGU credit for NFT Holders). Upgrades take effect upon payment.
@@ -79,7 +81,7 @@ Refers to an individual or entity holding a valid Tengu NFT, issued or recognize
 
 ### **3. Grant of License Rights**
 3.1. **Tier 1 (AGPL License):**
-- Non-paying users are bound by AGPL-3.0, including source code disclosure obligations.
+- AGPL-3.0 users retain its rights, including compliant commercial use, and must satisfy its applicable corresponding-source obligations.
 
 3.2. **Tier 2 Rights (1 SOL or NFT Ownership):**
 - (a) Non-exclusive, worldwide, perpetual license to use, modify, and distribute Tengu for Commercial Use.
@@ -172,7 +174,7 @@ Refers to an individual or entity holding a valid Tengu NFT, issued or recognize
 - Binding arbitration in Wilmington, Delaware, under AAA rules.
 
 8.3. **International Applicability:**
-- English arbitration, enforceable globally; ICC rules optional for non-US Licensees.
+- English arbitration, enforceable subject to applicable law; ICC rules optional for non-US Licensees.
 
 ---
 
@@ -242,7 +244,7 @@ In case of any conflict in interpretation, the English version of this Agreement
 
 ### B.3 Dispute Resolution
 
-Unless otherwise agreed in writing, any disputes arising out of or in connection with this Agreement shall be finally resolved through binding arbitration in Wilmington, Delaware, administered under the Commercial Arbitration Rules of the American Arbitration Association (AAA). The arbitration shall be conducted in English. The award shall be final and enforceable worldwide.
+Unless otherwise agreed in writing, any disputes arising out of or in connection with this Agreement shall be finally resolved through binding arbitration in Wilmington, Delaware, administered under the Commercial Arbitration Rules of the American Arbitration Association (AAA). The arbitration shall be conducted in English. The award shall be final, subject to applicable enforcement rules.
 
 #### Optional Regional Arbitration (if the primary venue is unenforceable):
 
@@ -252,13 +254,13 @@ Unless otherwise agreed in writing, any disputes arising out of or in connection
 * International: Paris under ICC Rules
 * Middle East: Dubai (DIAC), Istanbul (ISTAC), Tel Aviv (Israeli Arbitration Law), Tehran (only if foreign arbitration is legally recognized)
 
-Users expressly waive the right to participate in class actions, joint litigation, or jury trials.
+Any waiver of class actions, joint litigation, or jury trials applies only to the extent permitted by applicable law.
 
 ---
 
 ### B.4 Protocol Nature Statement
 
-This protocol is open-source, decentralized, and experimental. It is intended solely as a technical system for permissioned interaction and tooling. It does not constitute a security, financial product, commodity, fundraising mechanism, or investment advice. Acquisition, holding, or transfer of NFTs or tokens does not establish any investor relationship or legal dependency on the developers.
+Tengu is an experimental software project. Descriptions of NFTs and tokens concern proposed access and licensing mechanisms, not investment advice or a promise of returns. Legal classification depends on the actual arrangement and applicable law. Holding an asset does not automatically create ownership in the project or rights beyond the applicable agreement.
 
 ---
 
@@ -283,7 +285,7 @@ The developers and contributors assume no liability for:
 * Failures arising from third-party APIs, AI models, or oracles
 * Service interruptions due to legal or regulatory changes
 
-This protocol does not constitute a service agreement and provides no warranty of availability, support, or performance.
+The software alone does not create a separate service commitment. Express support obligations agreed under this Commercial License and Appendix A remain applicable; no additional availability or performance warranty is implied.
 
 ---
 
@@ -292,7 +294,7 @@ This protocol does not constitute a service agreement and provides no warranty o
 By using the protocol, users confirm that:
 
 * They assume full responsibility for all actions and outcomes
-* They understand that tokens and NFTs are not securities or investment products
+* They understand that asset classification depends on applicable law and that this agreement promises no investment return
 * They have conducted all necessary legal and regulatory due diligence
 * They waive any right to punitive, indirect, or consequential damages
 
@@ -301,13 +303,13 @@ By using the protocol, users confirm that:
 ### B.8 Anti-Abuse and Litigation Clause
 
 * Users must provide written notice to the developers at least 30 days before initiating any legal claim
-* Frivolous or malicious litigation will lead to access termination, public disclosure, and countersuit
+* Remedies for frivolous or malicious claims are subject to applicable law; personal information is not made public solely because a claim is filed
 * The developers reserve the right to recover all damages, including legal fees and reputational harm
 * Disputes must be handled on an individual basis; class actions and joint arbitrations are strictly prohibited
 
 ---
 
-### B.9 Decentralization and Non-Custodial Disclaimer
+### B.9 Local Execution and Non-Custodial Design
 
 The protocol and its developers:
 

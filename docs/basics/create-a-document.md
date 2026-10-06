@@ -1,57 +1,36 @@
 ---
 sidebar_position: 2
+title: 链上数据与网络
+description: 理解本地客户端与链节点的关系，排查数据延迟和连接问题。
 ---
 
-# Create a Document
+# 链上数据与网络
 
-Documents are **groups of pages** connected through:
+Tengu 在本地运行界面和计算逻辑，但余额、交易状态、行情与广播结果来自相应网络。桌面客户端仍需要连接你配置的节点或数据服务。
 
-- a **sidebar**
-- **previous/next navigation**
-- **versioning**
+## 哪些操作需要联网
 
-## Create your first Doc
+| 操作 | 网络需求 |
+| --- | --- |
+| 查看已保存的配置或缓存 | 可使用本地数据，范围取决于版本 |
+| 本地生成密钥或签名 | 密钥操作可以在本地完成；交易构造可能仍需要链上参数 |
+| 查询余额、确认状态、订阅事件 | 需要可用节点或数据服务 |
+| 广播交易 | 需要把已签名交易提交至目标网络 |
+| 调用云端 AI（规划） | 需要对应提供方的网络服务 |
 
-Create a Markdown file at `docs/hello.md`:
+## 核对连接
 
-```md title="docs/hello.md"
-# Hello
+查询结果异常时，先核对网络、节点地址、认证信息和服务限额。主网与测试网的资产不能混用；不同节点的缓存和确认级别也可能造成短暂差异。
 
-This is my **first Docusaurus document**!
-```
+链上余额、代币价格和本地缓存是不同数据。余额不变不一定意味着订阅正常，价格为空也不一定意味着钱包没有资产。
 
-A new document is now available at [http://localhost:3000/docs/hello](http://localhost:3000/docs/hello).
+## 处理数据延迟
 
-## Configure the Sidebar
+1. 确认系统网络可用，检查代理、防火墙和系统时间。
+2. 核对节点是否响应，以及当前版本是否支持该接口。
+3. 检查是否触发限流，降低轮询频率或切换到你信任的服务。
+4. 使用交易哈希或公开地址交叉核对结果。
 
-Docusaurus automatically **creates a sidebar** from the `docs` folder.
+如果数据仍不一致，记录网络名称、节点类型、发生时间和复现步骤。提交反馈时隐藏 API Key 和其他认证信息。
 
-Add metadata to customize the sidebar label and position:
-
-```md title="docs/hello.md" {1-4}
----
-sidebar_label: 'Hi!'
-sidebar_position: 3
----
-
-# Hello
-
-This is my **first Docusaurus document**!
-```
-
-It is also possible to create your sidebar explicitly in `sidebars.js`:
-
-```js title="sidebars.js"
-export default {
-  tutorialSidebar: [
-    'intro',
-    // highlight-next-line
-    'hello',
-    {
-      type: 'category',
-      label: 'Tutorial',
-      items: ['basics/create-a-document'],
-    },
-  ],
-};
-```
+节点服务可能看到你的 IP、查询地址和请求时间。具体隐私边界请阅读[隐私政策](/legal/privacy)。

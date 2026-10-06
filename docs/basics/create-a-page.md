@@ -1,43 +1,37 @@
 ---
 sidebar_position: 1
+title: 账户与钱包
+description: 区分钱包、账户、地址和密钥，并准备可恢复的备份。
 ---
 
-# Create a Page
+# 账户与钱包
 
-Add **Markdown or React** files to `src/pages` to create a **standalone page**:
+钱包负责管理密钥和签名，地址用于接收资产和查询链上状态。把一个地址添加到观察列表，并不意味着你拥有该地址的签名权限。
 
-- `src/pages/index.js` → `localhost:3000/`
-- `src/pages/foo.md` → `localhost:3000/foo`
-- `src/pages/foo/bar.js` → `localhost:3000/foo/bar`
+## 首次使用
 
-## Create your first React Page
+1. 确认安装版本提供的网络和钱包模块。不要仅凭首页介绍判断某条链或某种导入格式已经可用。
+2. 优先使用测试网络或没有真实资产的测试账户。
+3. 如果该版本支持创建钱包，按界面提示生成并备份恢复资料；如果支持导入，先核对网络、格式和派生路径。
+4. 核对显示地址与预期地址，再进行小额接收和恢复测试。
 
-Create a file at `src/pages/my-react-page.js`:
+已有钱包可先添加公开地址观察数据，确认网络连接和界面行为后，再决定是否导入密钥。
 
-```jsx title="src/pages/my-react-page.js"
-import React from 'react';
-import Layout from '@theme/Layout';
+## 助记词与派生路径
 
-export default function MyReactPage() {
-  return (
-    <Layout>
-      <h1>My React page</h1>
-      <p>This is a React page</p>
-    </Layout>
-  );
-}
-```
+助记词用于恢复一组派生密钥，不能简单等同于某一个地址。同一组助记词在不同网络、账户索引和派生路径下，可能得到不同地址。
 
-A new page is now available at [http://localhost:3000/my-react-page](http://localhost:3000/my-react-page).
+导入后地址不一致时，应核对原钱包使用的网络、账户索引、派生路径，以及是否设置了额外的助记词口令。
 
-## Create your first Markdown Page
+## 备份哪些内容
 
-Create a file at `src/pages/my-markdown-page.md`:
+| 内容 | 用途 |
+| --- | --- |
+| 助记词、额外口令或原始密钥 | 恢复签名能力，具体取决于钱包类型 |
+| 网络、派生路径与账户索引 | 找到原来的账户与地址 |
+| 加密的钱包文件与配置 | 恢复本地状态，可移植性取决于版本和系统 |
+| 地址与账户备注 | 核对恢复结果，不具备签名能力 |
 
-```mdx title="src/pages/my-markdown-page.md"
-# My Markdown page
+恢复资料应与日常设备分开保管。只复制程序目录未必包含完整钱包数据；备份是否有效，要通过恢复验证确认。
 
-This is a Markdown page
-```
-
-A new page is now available at [http://localhost:3000/my-markdown-page](http://localhost:3000/my-markdown-page).
+下一步阅读[隐私与数据备份](./deploy-your-site.md)或[链上数据与网络](./create-a-document.md)。

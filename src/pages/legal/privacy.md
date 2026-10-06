@@ -1,89 +1,62 @@
-## 🔒 隐私政策（中文）
+---
+title: 隐私政策
+description: Tengu 的本地数据、网络请求、第三方服务与反馈信息说明。
+---
+
+# 隐私政策 / Privacy Policy
 
 **生效日期：2025 年 4 月 1 日**
 
-我们非常重视您的隐私和数据安全。Tengu 是一款完全本地运行的加密桌面客户端，致力于为您提供私密、安全、透明的使用体验。
+## 中文
 
-### 1. 本地运行与数据隐私
+Tengu 以本地管理为核心设计原则。私钥、助记词与钱包恢复资料应保存在用户设备上，不应作为查询链上数据或向开发者反馈问题的材料。
 
-- Tengu 的所有功能均在您的本地设备上执行。
-- 我们不会收集、传输或上传您的任何私钥、助记词、钱包信息或链上数据。
-- 所有敏感信息（如私钥、助记词）仅存储于本地，并通过 XSalsa20/Poly1305 加密保护。
+### 本地数据与网络请求
 
-### 2. 网络请求与链上数据
+客户端的配置、钱包数据与日志由用户管理。具体存储位置、加密方式和恢复要求以安装版本的实现为准；设备、系统凭据或密码的丢失可能影响恢复。
 
-- Tengu 可能使用公链公开节点（如 Solana RPC、gRPC 服务）进行链上数据查询。
-- 所有请求均由您的客户端直接发起，不会经过我们的服务器或中转服务。
-- 我们不追踪、不记录、不收集您的链上活动或钱包地址。
+查询余额、交易和链上事件时，客户端需要向所选节点发送请求。节点可能接收公开地址、请求内容、IP 和访问时间。这些信息不同于私钥，但仍可能反映使用行为。
 
-### 3. 日志与崩溃信息
+本地运行不意味着没有网络请求，也不意味着第三方节点不会记录数据。
 
-- 默认情况下，Tengu 不会收集任何日志或错误报告。
-- 您可以选择手动提交错误日志，以帮助我们改进产品。
-- 所有日志文件均保存在本地，除非您主动发送。
+### 日志与反馈
 
-### 4. 第三方服务
+项目不要求用户在反馈中提供私钥、助记词或钱包密码。用户主动提交日志、截图或邮件时，应先隐藏不必要的账户信息、API Key、路径和个人资料。
 
-- 若您使用了第三方插件或脚本（如 JavaScript、Lua 扩展），请注意其隐私策略可能不同。
-- Tengu 对用户加载的外部代码不进行行为追踪，也不默认允许网络通信。
+主动发送的材料用于处理所提交的问题。与维护者联系时，请只提供复现和诊断所需的信息。
 
-### 5. NFT 与链上验证
+### 第三方扩展与模型
 
-- 若您使用 NFT 授权系统，Tengu 会验证您的钱包地址是否持有授权 NFT。
-- 此验证通过公链节点完成，不会收集任何额外数据。
+脚本、插件、节点和云端模型可能有各自的数据处理方式。调用云端模型会向相应服务发送输入；本地模型和插件也可能读取文件或发起网络请求，范围取决于具体实现。
 
-### 6. 隐私承诺
+使用前核对代码来源、权限与提供方政策。不要假设所有 Alpha 模块均已具备完整的沙箱或权限隔离。
 
-- 我们永远不会将您的数据用于商业用途。
-- 我们不会出售、共享或以任何方式泄露用户信息。
-- Tengu 是开源项目，您可以随时审查所有源代码与数据处理流程。
+### 授权与官方网站
 
-如您对隐私政策有任何疑问，请联系：**tengu@to1.dev**
+NFT 持有验证可使用公开链上信息和相应证明，不应要求提供恢复资料。授权通信中涉及的数据，以正式流程说明为准。
 
----
+当前文档站不集成第三方统计或广告脚本，字体由本站本地托管。托管服务可能处理普通访问日志；服务方的记录方式取决于实际部署。浏览器存储说明见 [Cookie 政策](/legal/cookie-policy)。
 
-## 🔒 Privacy Policy (English)
+联系：[tengu@to1.dev](mailto:tengu@to1.dev)。
 
-**Effective Date: April 1, 2025**
+## English
 
-Your privacy and data security are extremely important to us. Tengu is a fully local, self-contained crypto desktop client committed to providing a private, secure, and transparent experience.
+Tengu is designed around local data management. Private keys, recovery phrases, and wallet recovery material should remain on the user's device and are not required for blockchain queries or support reports.
 
-### 1. Local Execution & Data Privacy
+### Local data and network access
 
-- All core features of Tengu are executed entirely on your local machine.
-- We do not collect, transmit, or store any private keys, mnemonic phrases, wallet information, or on-chain data.
-- Sensitive data (e.g., keys and mnemonics) is stored locally and protected using XSalsa20/Poly1305 encryption.
+Users manage their local configuration, wallet data, and logs. Storage, encryption, and recovery details depend on the installed version. Loss of device credentials or passwords may affect recovery.
 
-### 2. Network Access & Blockchain Data
+Blockchain queries require a selected node or data service. Providers may receive public addresses, request contents, IP addresses, and request times. Local execution does not imply that no network requests occur or that third parties keep no records.
 
-- Tengu interacts with public blockchain RPC/gRPC endpoints (e.g., Solana) to query chain data.
-- These requests are initiated directly by your client; we do not operate servers or act as intermediaries.
-- We do not track, log, or store your wallet addresses or on-chain activities.
+### Support and third parties
 
-### 3. Logs & Crash Reports
+Do not submit private keys, recovery phrases, or wallet passwords. Remove unnecessary account details, API keys, paths, and personal information before sharing logs or screenshots. Submitted material is used to investigate the reported issue.
 
-- By default, Tengu does not collect usage logs or crash reports.
-- You may optionally choose to submit logs to help improve the software.
-- All log files are stored locally unless you choose to share them.
+Plugins, scripts, nodes, and cloud models have their own behavior and policies. Cloud model calls send input to their provider. Verify permissions and code sources; complete isolation should not be assumed for every Alpha module.
 
-### 4. Third-Party Scripts or Plugins
+### Licensing and the website
 
-- If you load custom plugins or scripts (e.g., JavaScript, Lua), those may follow their own privacy policies.
-- Tengu does not track or restrict your plugin activity and does not allow external communication by default.
+NFT ownership verification can use public chain data and proof of ownership; recovery material is not required. The current documentation site includes no third-party analytics or advertising scripts and self-hosts its fonts. Hosting providers may process ordinary access logs according to the actual deployment.
 
-### 5. NFT-Based Licensing
-
-- If you use NFT-based licensing, Tengu will verify NFT ownership via your public wallet address.
-- This process is done using blockchain nodes and does not require or collect personal data.
-
-### 6. Our Commitment
-
-- We will never use your data for commercial purposes.
-- We do not sell, share, or expose any user data in any form.
-- Tengu is fully open-source, and you are free to audit all code and data handling mechanisms.
-
-If you have any questions about this privacy policy, please contact us at: **tengu@to1.dev**
-
-import BackToTopButton from '@theme/BackToTopButton';
-
-<BackToTopButton />
+See the [Cookie Policy](/legal/cookie-policy) for browser storage. Contact [tengu@to1.dev](mailto:tengu@to1.dev) with questions.

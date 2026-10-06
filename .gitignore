@@ -18,3 +18,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Local tools, source fonts, and browser verification artifacts
+/.cache/
+/output/
+/.playwright-cli/

@@ -12,22 +12,27 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc"
+    "typecheck": "tsc --noEmit",
+    "check": "bun run typecheck && bun run build",
+    "fonts:prepare": "node scripts/prepare-font.mjs"
   },
   "dependencies": {
-    "@docusaurus/core": "3.7.0",
-    "@docusaurus/preset-classic": "3.7.0",
-    "@mdx-js/react": "^3.0.0",
-    "clsx": "^2.0.0",
-    "prism-react-renderer": "^2.3.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "@docusaurus/core": "3.10.2",
+    "@docusaurus/preset-classic": "3.10.2",
+    "@mdx-js/react": "^3.1.1",
+    "clsx": "^2.1.1",
+    "prism-react-renderer": "^2.4.1",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.7.0",
-    "@docusaurus/tsconfig": "3.7.0",
-    "@docusaurus/types": "3.7.0",
-    "typescript": "~5.6.2"
+    "@docusaurus/faster": "3.10.2",
+    "@docusaurus/module-type-aliases": "3.10.2",
+    "@docusaurus/tsconfig": "3.10.2",
+    "@docusaurus/types": "3.10.2",
+    "fontkit": "2.0.4",
+    "fontverter": "2.0.0",
+    "typescript": "5.9.3"
   },
   "browserslist": {
     "production": [
@@ -42,6 +47,15 @@
     ]
   },
   "engines": {
-    "node": ">=18.0"
-  }
+    "node": ">=22.0",
+    "bun": ">=1.4.2"
+  },
+  "packageManager": "bun@1.4.2",
+  "overrides": {
+    "postcss-selector-parser": "7.1.6",
+    "serialize-javascript": "7.1.2",
+    "tinypool": "2.2.0",
+    "uuid": "11.1.1"
+  },
+  "trustedDependencies": ["@swc/core"]
 }
