@@ -34,6 +34,8 @@ bun run start
 
 `src/themes/catalog.ts` 管理主题名称与预览，`src/css/themes.css` 管理配色和形态变量。新增主题时同步维护两处。`src/theme/Root.tsx` 注入偏好管理，导航组件仅包装原有明暗切换器，以保持框架升级兼容。
 
+`src/theme/ThemeProvider` 承载持久导航及其状态，`src/theme/Layout` 仅负责页面内容、元信息和页脚。路由相关的插件样式上下文保留在 `Layout/Provider` 中。这样首次加载页面模块时不会卸载导航栏；升级 Docusaurus 时需要对照上游的这三处组件检查兼容性。
+
 主题偏好保存于本地 `tengu-visual-theme`，明暗模式沿用 Docusaurus 存储；HTML 的初始化脚本在首屏绘制前恢复主题。存储不可用或值无效时回退到玉庭，主题切换不增加字体下载或外部服务请求。
 
 ## 完整本地字体
